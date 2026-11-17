@@ -8,7 +8,7 @@
 
 | 스킬 | 누가 | 하는 일 |
 | --- | --- | --- |
-| [`oiyo-kr-law-guide`](skills/oiyo-kr-law-guide/SKILL.md) | 누구나 · 종사자 | 법령 길잡이 10분야(세금·회계·노동·행정·등기·보험·관세·특허·감정평가·부동산 중개). 선제 질문 → 기한·조문·서류·창구, 자격사 업무 범위 비교 |
+| [`oiyo-kr-law-guide`](skills/oiyo-kr-law-guide/SKILL.md) | 누구나 · 종사자 | 법령 길잡이 10분야(세금·회계·노동·행정·등기·보험·관세·특허·감정평가·부동산 중개). 선제 질문 → 기한·조문·서류·창구, 자격사 업무 범위 비교. 실무 계산(과태료 감경, 수입 관세·FTA, IFRS 17 CSM, K-ICS, 장해·과실 보험금, 전표 분석, 보험 설명 기록)과 실무 길잡이(영업신고 서류, 체류 기한, 전자 창구 6곳, 전문가 서류 읽는 법) |
 | [`kr-tax-advisor`](skills/kr-tax-advisor/SKILL.md) | 세무·회계 실무자 | 비상장주식 평가, 가업상속공제, 법인전환, DCF 기업가치 계산과 상담 메모 |
 | [`oiyo-kr-benefits-navigator`](skills/oiyo-kr-benefits-navigator/SKILL.md) | 누구나 | 근로장려금·출산휴가 급여·체불 대지급금·산재·실업급여 등 생활 지원금과 노동권 계산 |
 | [`oiyo-business-strategist`](skills/oiyo-business-strategist/SKILL.md) | 경영자·실무자 | 경영 이론 40가지로 의사결정 메모, 한국 사업자 필수 일정, 운영 문제 점검 |
