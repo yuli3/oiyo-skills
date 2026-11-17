@@ -1,0 +1,42 @@
+name: Release skill zips
+
+on:
+  push:
+    branches: [main]
+    paths: ["skills/**", "COMPETENCIES.md", ".github/workflows/release.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Smoke-test skill scripts
+        run: |
+          node skills/oiyo-kr-law-guide/scripts/guide.mjs suggest "전세 보증금을 못 돌려받아요" > /dev/null
+      - name: Build zips
+        run: |
+          mkdir -p dist
+          cd skills
+          for d in */; do
+            name="${d%/}"
+            zip -r -X "../dist/${name}-skill.zip" "$name" > /dev/null
+          done
+          cd ..
+          zip -r -X dist/oiyo-skills-all.zip skills COMPETENCIES.md README.md LICENSE > /dev/null
+          ls -l dist
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="v$(date -u +%Y.%m.%d)-${GITHUB_RUN_NUMBER}"
+          gh release create "$tag" dist/*.zip \
+            --title "OIYO Skills ${tag}" \
+            --notes "스킬별 zip과 전체 묶음이에요. Claude 앱은 스킬별 zip을 설정 → 기능 → 스킬에 올리고, Claude Code는 압축을 풀어 ~/.claude/skills/에 두세요. 원본 커밋: ${GITHUB_SHA}" \
+            --latest
