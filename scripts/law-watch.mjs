@@ -109,17 +109,22 @@ async function callTool(name, toolArgs) {
 // verify_citations 줄 형식: "✓ 「민법」 제160조(역에 의한 계산) 실존", "✗ … [NOT_FOUND] …", "⚠ …", "⌛ … [REPEALED] …"
 export function parseVerifyLines(text) {
   return text.split("\n").map(l => l.trim()).filter(l => /^[✓✗⚠⌛]/.test(l)).map(line => ({
-    mark: line[0], line, law: (line.match(/「([^」]+)」/) || [])[1] || "",
+    // 법령명: 「」 안, 없으면 표시 뒤부터 첫 "제N조" 앞까지(서버 라벨은 "민법 제160조" 형태)
+    mark: line[0], line, law: ((line.match(/「([^」]+)」/) || line.match(/^[✓✗⚠⌛]\s+(.+?)\s+제\d+조/) || [])[1] || "").trim(),
   }));
 }
 
-const squash = s => s.replace(/\s+/g, "");
+// 공백·가운뎃점 표기 차이(·, ㆍ, ・, ‧)를 지운다. 정식 법령명은 ㆍ(U+318D)를 쓴다.
+const squash = s => s.replace(/[\s·ㆍ・‧]+/g, "");
+
+// "제16조"가 "제160조"·"제16조의2"에 걸리지 않게 뒤 경계를 본다.
+const hasArticle = (line, article) => new RegExp(`${article}(?![0-9]|의\\d)`).test(line);
 
 export function matchVerdicts(citations, verdictLines) {
   // 줄 순서가 입력 순서와 같다는 보장이 없어 법령명(공백 제거)+조문으로 맞춘다.
   return citations.map(cite => {
-    const hit = verdictLines.find(v => squash(v.line).includes(squash(cite.law)) && v.line.includes(cite.article))
-      || verdictLines.find(v => squash(v.law) === squash(cite.law) && v.line.includes(cite.article));
+    const hit = verdictLines.find(v => squash(v.law) === squash(cite.law) && hasArticle(v.line, cite.article))
+      || verdictLines.find(v => squash(v.line).includes(squash(cite.law)) && hasArticle(v.line, cite.article));
     return { ...cite, mark: hit?.mark || "?", detail: hit?.line || "응답에서 이 인용을 찾지 못함", officialLaw: hit?.law || "" };
   });
 }
