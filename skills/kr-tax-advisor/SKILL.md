@@ -12,7 +12,7 @@ description: 한국 세무·회계 실무 상담 보조. 비상장주식 보충�
 1. MCP 서버 `https://api.oiyo.net/mcp`(Registry 이름 `io.github.yuli3/oiyo-calculations`)가 연결돼 있으면 그 도구를 쓴다.
    - `value_kr_unlisted_shares`, `calculate_kr_family_business_deduction`, `calculate_kr_incorporation_conversion`, `calculate_dcf_valuation`
 2. 코드 실행이 되면 이 스킬의 스크립트를 쓴다: `node scripts/calc.mjs <도구> '<JSON 입력>'` (Node 22 이상, 의존성 없음).
-   - 도구: `unlisted-shares`, `family-business`, `incorporation-conversion`, `dcf`, `wacc`, `corp-tax`(법인세 어림과 세무조정 한도), `entertainment`(기업업무추진비 한도), `penalty`(무신고·과소신고·납부지연·원천세 가산세와 감면). 입력 예시는 `node scripts/calc.mjs help`.
+   - 도구: `unlisted-shares`, `family-business`, `incorporation-conversion`, `dcf`, `wacc`, `corp-tax`(법인세 어림과 세무조정 한도), `entertainment`(기업업무추진비 한도), `penalty`(무신고·과소신고·납부지연·원천세 가산세와 감면), `depreciation`·`lease`·`bond`(결산 상각표), `audit`(다음 해 외부감사 대상 판정), `deemed-input`·`card-credit`·`bad-debt`(부가세 공제). 입력 예시는 `node scripts/calc.mjs help`.
 3. 둘 다 안 되면 계산하지 말고, 웹 계산기 링크(아래)를 주고 필요한 입력을 정리해 준다.
 
 ## 진행 순서
@@ -45,6 +45,24 @@ description: 한국 세무·회계 실무 상담 보조. 비상장주식 보충�
 - 무신고 20%(부정 40%, 복식부기·법인은 수입금액 0.07%와 비교), 과소신고 10%(부정 40%), 납부지연 하루 0.022%, 원천세 3% + 하루 0.022%(10% 한도).
 - 감면: 수정신고 1개월 90%·3개월 75%·6개월 50%·1년 30%·1년 6개월 20%·2년 10%, 기한후신고 1개월 50%·3개월 30%·6개월 20%. 결과의 `next`는 지금 감면율이 끝나는 날이다. "그날 전에 내면 이만큼 줄어요"로 알려 준다.
 - 납부지연 가산세는 감면되지 않으니, 신고와 함께 납부까지 하라고 말한다.
+
+## 결산 상각표와 외부감사 대상 (depreciation · lease · bond · audit)
+
+결산 분개 전에 표를 맞춰 볼 때 쓴다. 먼저 묻는다: 취득원가·잔존가치·내용연수·상각방법·취득 월(감가상각), 연 리스료·기간·증분차입이자율·기초/기말 지급(리스), 액면·표면이율·시장이율·기간(사채), 직전 사업연도 말 자산·부채·매출·종업원 수와 상장 여부·유한회사 여부(외감).
+
+- `depreciation`: method `straight`(정액)·`declining`(정률, 잔존 0이면 5% 기준 상각률)·`syd`(연수합계). `firstMonths`로 첫해 월할.
+- `lease`: K-IFRS 1116호 리스부채 현재가치, 해마다 이자비용·원금 상환·사용권자산 정액 상각.
+- `bond`: 유효이자율법. 할인·할증 여부와 해마다 차금 상각액.
+- `audit`: 상장이면 대상, 자산 또는 매출 500억 원 이상이면 대상, 그 밖에는 자산 120억·부채 70억·매출 100억·종업원 100명 중 2개 이상(유한회사는 사원 50명을 더해 3개 이상)이면 대상.
+- 세무상 상각 한도(법인세법 제23조)와 회계 상각은 다를 수 있다고 말하고, 감사인 선임은 회사가 직접 한다.
+
+## 부가세 공제 (deemed-input · card-credit · bad-debt)
+
+부가세 신고 전에 빠뜨린 공제를 찾을 때 쓴다. 먼저 묻는다: 업종(개인·법인 음식점, 제조), 반기 과세표준, 면세 농·축·수산물 매입가액(계산서·카드 증빙분), 카드·현금영수증 매출, 직전 연도 공급가액, 못 받은 외상값과 공급일·대손 확정일.
+
+- `deemed-input`: type `restaurant-individual`(과세표준 2억 이하 9/109, 2026년까지, 넘으면 8/108)·`restaurant-corp`(6/106)·`bakery-individual`(6/106)·`manufacturer-sme`(4/104)·`other`(2/102). 한도율(2027년까지): 법인 50%, 개인 음식점 75·70·60%, 그 밖 개인 65·55%. 한도는 1년 단위로 확정신고 때 정산한다고 말한다.
+- `card-credit`: 직전 연도 공급가액 10억 원 이하 개인, 1.3%·연 1,000만 원(2026년까지). 2027년은 정부안(1.2%·500만 원)이 국회를 통과했는지 확인하라고 말한다.
+- `bad-debt`: 대손금액 × 10/110, 공급일부터 10년이 지난 날이 속하는 과세기간 확정신고기한까지 대손이 확정돼야 한다. 대손 사유(파산·강제집행·소멸시효·부도 6개월)를 먼저 확인한다.
 
 ## 세무 프로그램과 이어 쓰기 (장부 입력 자료 정리)
 
