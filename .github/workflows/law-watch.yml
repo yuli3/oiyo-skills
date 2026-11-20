@@ -1,0 +1,84 @@
+# 법령 인용 점검 (2026-11-20): 스킬 문서의 law.go.kr 조문 링크가 실제로 있는지, 지난 점검 뒤 개정됐는지 매주 확인한다.
+# 문제가 있으면 "법령 인용 점검" 이슈를 열거나 갱신한다. 개정 비교 기준(state.json)은 law-watch-state 브랜치에 둔다.
+# 조회 서버: korean-law-mcp 원격(키 없이 공유 한도). 시크릿 LAW_OC(법제처 Open API 인증키)가 있으면 그 키를 쓴다.
+name: Law citation watch
+
+on:
+  schedule:
+    - cron: "17 0 * * 1" # 매주 월요일 09:17 KST
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scripts/law-watch.mjs", ".github/workflows/law-watch.yml"]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: law-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Restore previous state
+        run: |
+          if git fetch --depth=1 origin law-watch-state 2>/dev/null; then
+            git show FETCH_HEAD:state.json > prev-state.json || true
+          fi
+          ls -l prev-state.json 2>/dev/null || echo "no previous state (first run)"
+
+      - name: Check citations
+        id: check
+        env:
+          LAW_OC: ${{ secrets.LAW_OC }}
+        run: |
+          args="--out out"
+          [ -s prev-state.json ] && args="$args --state prev-state.json"
+          set +e
+          node scripts/law-watch.mjs $args
+          code=$?
+          set -e
+          cat out/report.md >> "$GITHUB_STEP_SUMMARY" || true
+          echo "exit=$code" >> "$GITHUB_OUTPUT"
+          [ "$code" = "0" ] || [ "$code" = "2" ] || exit "$code"
+
+      - name: Save state
+        if: steps.check.outputs.exit == '0'
+        run: |
+          mkdir -p /tmp/state && cp out/state.json out/summary.json out/report.md /tmp/state/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan law-watch-state-tmp
+          git rm -rfq .
+          cp /tmp/state/* .
+          git add state.json summary.json report.md
+          git commit -qm "law-watch state $(date -u +%F)"
+          git push -f origin HEAD:law-watch-state
+
+      - name: Open or update issue
+        if: steps.check.outputs.exit == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          bad=$(node -p "const s=require('./out/summary.json'); s.bad + s.changed")
+          title="법령 인용 점검"
+          num=$(gh issue list --state open --search "in:title $title" --json number,title -q ".[] | select(.title==\"$title\") | .number" | head -1)
+          if [ "$bad" -gt 0 ]; then
+            if [ -n "$num" ]; then gh issue comment "$num" --body-file out/report.md
+            else gh issue create --title "$title" --body-file out/report.md; fi
+          elif [ -n "$num" ]; then
+            gh issue close "$num" --comment "이번 점검에서 고칠 인용과 개정이 없어 닫습니다."
+          fi
+
+      - name: Server unreachable
+        if: steps.check.outputs.exit == '2'
+        run: echo "::warning::법령 조회 서버에 닿지 못해 이번 점검을 건너뜁니다."
