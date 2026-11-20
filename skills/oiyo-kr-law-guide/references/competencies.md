@@ -29,6 +29,9 @@ GENERATED from tools-oiyo src/data/pro-competencies.ts. 기준일 2026-11-20. �
 - **법인세와 세무조정 한도** [계산·평가]: 업무추진비·기부금 한도 초과를 더하고 이월결손금을 빼 과세표준을 만든 뒤, 2026년 세율과 최저한세로 법인세를 어림해요.
   - 도구: 법인세 어림·세무조정 한도 https://tools.oiyo.net/ko/corporate-tax-adjustment-calculator/ · 개인 vs 법인 세금 비교 https://tools.oiyo.net/ko/incorporation-calculator/
   - 스킬: kr-tax-advisor
+- **부가세 공제 판정** [계산·평가] (일반인도 씀): 의제매입세액 공제율·한도율, 카드매출 발행세액공제 1.3%, 대손세액 10/110과 기한을 계산해요.
+  - 도구: 부가세 공제(의제매입·카드·대손) https://tools.oiyo.net/ko/vat-credit-calculator/
+  - 스킬: kr-tax-advisor
 - **연말정산·공제 판정** [계산·평가] (일반인도 씀): 부양가족·의료비·월세·카드 공제 요건을 하나씩 판정하고 환급액 차이를 비교해요.
   - 도구: 연말정산 계산기 https://tools.oiyo.net/ko/year-end-settlement-calculator/ · 부양가족 공제 판정 https://tools.oiyo.net/ko/dependent-deduction-checker/ · 의료비 세액공제 https://tools.oiyo.net/ko/medical-expense-tax-credit-calculator/ · 월세 세액공제 https://tools.oiyo.net/ko/monthly-rent-tax-credit-calculator/
   - MCP: `calculate_kr_year_end_settlement`, `check_kr_dependent_deduction`, `calculate_kr_monthly_rent_credit`, `calculate_card_tax_deduction`
@@ -72,6 +75,9 @@ GENERATED from tools-oiyo src/data/pro-competencies.ts. 기준일 2026-11-20. �
   - 도구: 회계·장부 법령 길잡이 https://tools.oiyo.net/ko/accounting-law-guide/
   - MCP: `search_kr_statutes`, `start_kr_law_intake`
   - 스킬: oiyo-kr-law-guide
+- **결산 상각표와 외감 대상 판정** [계산·평가]: 감가상각·IFRS 16 리스·사채 유효이자율 표를 만들고, 직전 연도 숫자로 다음 해 외부감사 대상을 판정해요.
+  - 도구: 결산 상각표·외감 판정 https://tools.oiyo.net/ko/accounting-schedule-calculator/
+  - 스킬: kr-tax-advisor
 - **재무제표 분석** [계산·평가] (일반인도 씀): 수익성·안정성·활동성 비율 추세로 회사 상태를 읽어요.
   - 도구: 재무비율 추세 https://tools.oiyo.net/ko/financial-ratio-trend/ · 원가계산 시뮬레이터 https://tools.oiyo.net/ko/cost-accounting-simulator/
 - **기업가치 평가** [계산·평가]: DCF·WACC, 상증법 평가를 나란히 놓고 가정이 바뀔 때 가치가 어떻게 움직이는지 봐요.
@@ -116,6 +122,9 @@ GENERATED from tools-oiyo src/data/pro-competencies.ts. 기준일 2026-11-20. �
 - **4대보험과 인건비** [계산·평가] (일반인도 씀): 건강·연금·고용·산재보험료와 사업주 부담을 합쳐 실제 인건비를 구해요.
   - 도구: 인건비 계산기 https://tools.oiyo.net/ko/labor-cost-calculator/ · 건강보험료 계산기 https://tools.oiyo.net/ko/health-insurance-calculator/ · 일용직 4대보험 https://tools.oiyo.net/ko/daily-worker-insurance-checker/ · 실수령액 계산기 https://tools.oiyo.net/ko/salary-calculator/
   - MCP: `calculate_health_insurance`, `calculate_net_salary`
+- **상시근로자 수와 근로시간 점검** [계산·평가] (일반인도 씀): 1개월 연인원 ÷ 가동일수와 절반 규칙으로 5인 이상을 판정하고, 근무표로 주 52시간·휴게·야간·주휴를 점검해요.
+  - 도구: 상시근로자 수·근무표 점검 https://tools.oiyo.net/ko/workforce-schedule-check/ · 연장수당 계산기 https://tools.oiyo.net/ko/overtime-pay-calculator/
+  - 스킬: oiyo-kr-law-guide
 - **해고·체불 구제 기한** [기한·절차] (일반인도 씀, 자격사 업무와 맞닿음: 정보만): 부당해고 구제신청 3개월, 해고예고수당, 체불임금 대지급금 신청 기한을 세요.
   - 도구: 불복·이의신청 기한 계산 https://tools.oiyo.net/ko/appeal-deadline-calculator/ · 노동법 길잡이 https://tools.oiyo.net/ko/labor-law-guide/ · 해고예고수당 https://tools.oiyo.net/ko/dismissal-notice-pay-calculator/ · 체불 대지급금 https://tools.oiyo.net/ko/unpaid-wage-guarantee-calculator/ · 휴업수당 https://tools.oiyo.net/ko/shutdown-allowance-calculator/
   - MCP: `start_kr_law_intake`, `calculate_kr_dismissal_notice_pay`, `calculate_kr_wage_guarantee`, `calculate_kr_shutdown_allowance`
@@ -163,6 +172,9 @@ GENERATED from tools-oiyo src/data/pro-competencies.ts. 기준일 2026-11-20. �
   - 도구: 과태료 감경·가산금 계산기 https://tools.oiyo.net/ko/fine-reduction-calculator/
   - MCP: `calculate_kr_fine_reduction`
   - 스킬: oiyo-kr-law-guide
+- **영업정지·과징금과 운전면허 벌점** [계산·평가] (일반인도 씀): 영업정지 일수를 1일당 과징금으로 바꾸고, 운전면허 벌점 누산(121·201·271점)과 정지 일수를 계산해요.
+  - 도구: 운전면허 벌점·과징금 환산 https://tools.oiyo.net/ko/license-points-calculator/ · 과태료 감경·가산금 계산기 https://tools.oiyo.net/ko/fine-reduction-calculator/
+  - 스킬: oiyo-kr-law-guide
 - **정보공개청구와 사실조사** [상담·설계] (일반인도 씀): 필요한 행정 정보를 청구하고, 비공개 결정에 이의신청하는 순서를 안내해요.
   - 도구: 행정 절차 길잡이 https://tools.oiyo.net/ko/administrative-law-guide/
   - MCP: `start_kr_law_intake`
@@ -184,6 +196,12 @@ GENERATED from tools-oiyo src/data/pro-competencies.ts. 기준일 2026-11-20. �
   - 도구: 등기·법원 서류 길잡이 https://tools.oiyo.net/ko/registry-court-law-guide/ · 사망 후 할 일 타임라인 https://tools.oiyo.net/ko/after-death-checklist/ · 상속·증여 신고기한 https://tools.oiyo.net/ko/inheritance-gift-filing-deadline-calculator/ · 소멸시효 계산기 https://tools.oiyo.net/ko/statute-limitations-calculator/
   - MCP: `start_kr_law_intake`, `plan_kr_inheritance_gift_filing_deadline`
   - 스킬: oiyo-kr-law-guide
+- **법정상속분·유류분 계산** [계산·평가] (일반인도 씀): 배우자 1.5배 법정상속분과 유류분 부족액을 계산하고, 2026 개정(형제자매 삭제·기여 대가 제외·가액반환)과 청구 기한을 챙겨요.
+  - 도구: 법정상속분·유류분 계산 https://tools.oiyo.net/ko/inheritance-share-calculator/ · 상속세 계산기 https://tools.oiyo.net/ko/inheritance-tax-calculator/
+  - 스킬: oiyo-kr-law-guide
+- **경매 배당과 최우선변제** [계산·평가] (일반인도 씀): 근저당 설정일 기준 소액임차인 표, 1/2 한도, 당해세·근저당·확정일자 순서로 배당표를 미리 그려요.
+  - 도구: 경매 배당·최우선변제 계산 https://tools.oiyo.net/ko/auction-distribution-calculator/ · 전세보증 진단 https://tools.oiyo.net/ko/jeonse-guarantee-calculator/
+  - 스킬: oiyo-kr-law-guide
 - **등기 비용·취득세** [계산·평가] (일반인도 씀): 취득세·등록면허세·국민주택채권 매입액을 계산해요.
   - 도구: 취득세 계산기 https://tools.oiyo.net/ko/acquisition-tax-calculator/ · 생애최초 취득세 https://tools.oiyo.net/ko/first-home-tax-calculator/ · 국민주택채권 할인 https://tools.oiyo.net/ko/car-bond-refund-calculator/
   - MCP: `calculate_kr_acquisition_tax`
@@ -193,7 +211,7 @@ GENERATED from tools-oiyo src/data/pro-competencies.ts. 기준일 2026-11-20. �
   - 도구: 등기·법원 서류 길잡이 https://tools.oiyo.net/ko/registry-court-law-guide/
   - 스킬: oiyo-kr-law-guide
 - **보증금 회수와 전세 보증** [상담·설계] (일반인도 씀): 임차권등기명령, 보증보험 가입 가능 여부를 사실관계로 확인해요.
-  - 도구: 전세보증 진단 https://tools.oiyo.net/ko/jeonse-guarantee-calculator/ · 전월세 전환 https://tools.oiyo.net/ko/jeonse-monthly-converter/
+  - 도구: 경매 배당·최우선변제 계산 https://tools.oiyo.net/ko/auction-distribution-calculator/ · 전세보증 진단 https://tools.oiyo.net/ko/jeonse-guarantee-calculator/ · 전월세 전환 https://tools.oiyo.net/ko/jeonse-monthly-converter/
   - MCP: `diagnose_hug_guarantee`
 - **채무 조정 선택지** [상담·설계] (일반인도 씀): 개인회생 변제액과 기간을 계산해 선택지를 비교해요.
   - 도구: 개인회생 계산기 https://tools.oiyo.net/ko/personal-rehabilitation-calculator/
@@ -312,7 +330,7 @@ GENERATED from tools-oiyo src/data/pro-competencies.ts. 기준일 2026-11-20. �
   - MCP: `start_kr_law_intake`, `check_kr_business_day`
   - 스킬: oiyo-kr-law-guide
 - **해외직구 면세 판정** [상담·설계] (일반인도 씀): 150달러(미국발 200달러), 합산과세, 판매용 여부를 확인해요.
-  - 도구: 관세·통관 법령 길잡이 https://tools.oiyo.net/ko/customs-law-guide/
+  - 도구: 관세·통관 법령 길잡이 https://tools.oiyo.net/ko/customs-law-guide/ · 관세 실무 계산(휴대품·직구 합산·RVC·환급) https://tools.oiyo.net/ko/customs-practice-calculator/
   - MCP: `start_kr_law_intake`
   - 스킬: oiyo-kr-law-guide
 - **과세가격·환율 환산** [계산·평가] (일반인도 씀): 물품가격과 운임을 과세환율로 원화 환산해요.
@@ -320,6 +338,12 @@ GENERATED from tools-oiyo src/data/pro-competencies.ts. 기준일 2026-11-20. �
 - **품목분류(HS)와 세율** [계산·평가] (일반인도 씀, 자격사 업무와 맞닿음: 정보만): HS 코드를 정하고 기본·FTA 세율을 비교하는 역량이에요.
   - 도구: 수입 관세·FTA 비교 계산기 https://tools.oiyo.net/ko/import-duty-fta-calculator/
   - MCP: `calculate_kr_import_duty`
+  - 스킬: oiyo-kr-law-guide
+- **여행자 휴대품 세금** [계산·평가] (일반인도 씀): 800달러 초과분 간이세율 20%, 자진신고 30% 감면(한도 20만 원), 미신고 가산세 40%·60%를 계산해요.
+  - 도구: 관세 실무 계산(휴대품·직구 합산·RVC·환급) https://tools.oiyo.net/ko/customs-practice-calculator/
+  - 스킬: oiyo-kr-law-guide
+- **FTA 부가가치기준과 간이정액환급** [계산·평가]: 공제법·집적법 RVC와 비원산지 재료 여유분, FOB 1만 원당 정액환급과 청구 기한 2년을 계산해요.
+  - 도구: 관세 실무 계산(휴대품·직구 합산·RVC·환급) https://tools.oiyo.net/ko/customs-practice-calculator/ · 수입 관세·FTA 비교 계산기 https://tools.oiyo.net/ko/import-duty-fta-calculator/
   - 스킬: oiyo-kr-law-guide
 - **수입신고·원산지증명 서류** [서류·증빙] (자격사 업무와 맞닿음: 정보만): 인보이스·패킹리스트·원산지증명서를 맞춰 신고해요. 신고 대리는 관세사 업무예요.
   - 도구: 전문가 서류 읽는 법 https://tools.oiyo.net/ko/pro-document-reading-guide/
@@ -343,8 +367,11 @@ GENERATED from tools-oiyo src/data/pro-competencies.ts. 기준일 2026-11-20. �
   - MCP: `search_kr_statutes`
   - 스킬: oiyo-kr-law-guide
 - **공지예외·거절 대응 기한** [기한·절차] (일반인도 씀): 공지예외 12개월, 의견서 제출기간, 거절결정 불복 3개월, 연차료 납부를 관리해요.
-  - 도구: 불복·이의신청 기한 계산 https://tools.oiyo.net/ko/appeal-deadline-calculator/ · 특허·상표 법령 길잡이 https://tools.oiyo.net/ko/ip-law-guide/
+  - 도구: 특허·상표 기한 https://tools.oiyo.net/ko/ip-deadline-calculator/ · 불복·이의신청 기한 계산 https://tools.oiyo.net/ko/appeal-deadline-calculator/ · 특허·상표 법령 길잡이 https://tools.oiyo.net/ko/ip-law-guide/
   - MCP: `start_kr_law_intake`
+  - 스킬: oiyo-kr-law-guide
+- **우선권·PCT·연차료·갱신 기한** [기한·절차] (일반인도 씀): 조약우선권 12개월(디자인·상표 6개월), PCT 31개월, 심사청구 3년, 등록료·연차료, 상표 10년 갱신을 날짜로 관리해요.
+  - 도구: 특허·상표 기한 https://tools.oiyo.net/ko/ip-deadline-calculator/
   - 스킬: oiyo-kr-law-guide
 - **선행기술·등록상표 조사** [상담·설계] (일반인도 씀): 출원 전에 키프리스로 같은 기술·비슷한 상표를 찾아 가능성을 가늠해요.
   - 도구: 특허·상표 법령 길잡이 https://tools.oiyo.net/ko/ip-law-guide/
@@ -380,7 +407,13 @@ GENERATED from tools-oiyo src/data/pro-competencies.ts. 기준일 2026-11-20. �
   - MCP: `start_kr_law_intake`
   - 스킬: oiyo-kr-law-guide
 - **수익환원법** [계산·평가] (일반인도 씀): 임대수익과 환원율로 수익 부동산 가치를 구해요.
-  - 도구: 임대수익률 계산기 https://tools.oiyo.net/ko/rental-yield-calculator/ · 현재가치 계산기 https://tools.oiyo.net/ko/present-value-calculator/
+  - 도구: 수용 보상·감정평가 3방식 https://tools.oiyo.net/ko/appraisal-compensation-calculator/ · 임대수익률 계산기 https://tools.oiyo.net/ko/rental-yield-calculator/ · 현재가치 계산기 https://tools.oiyo.net/ko/present-value-calculator/
+- **감정평가 3방식과 시산가액 조정** [계산·평가]: 원가법(재조달원가·감가), 거래사례비교법(사정·시점·요인 보정), 수익환원법(순수익 ÷ 환원율)과 가중 조정을 계산해요.
+  - 도구: 수용 보상·감정평가 3방식 https://tools.oiyo.net/ko/appraisal-compensation-calculator/ · DCF 기업가치 https://tools.oiyo.net/ko/dcf-valuation-calculator/
+  - 스킬: oiyo-kr-law-guide
+- **수용 보상 산정 구조** [계산·평가] (일반인도 씀): 공시지가기준 토지 보상, 영업손실(휴업 4개월·폐업 2년), 주거이전비를 어림해요.
+  - 도구: 수용 보상·감정평가 3방식 https://tools.oiyo.net/ko/appraisal-compensation-calculator/
+  - 스킬: oiyo-kr-law-guide
 - **감정가와 세금** [계산·평가] (일반인도 씀): 상속·증여 신고에서 감정가와 공시가격의 세금 차이를 비교해요.
   - 도구: 감정가 vs 공시가격 https://tools.oiyo.net/ko/inherited-house-appraisal-vs-official-price-calculator/ · 상속세 계산기 https://tools.oiyo.net/ko/inheritance-tax-calculator/
   - MCP: `compare_kr_inherited_house_valuation`, `calculate_inheritance_gift_tax`
@@ -401,7 +434,7 @@ GENERATED from tools-oiyo src/data/pro-competencies.ts. 기준일 2026-11-20. �
 등록 사무소에서 매매·임대차 중개, 확인·설명, 거래계약서 작성
 
 - **공인중개사법·주택임대차보호법** [법령 해석] (일반인도 씀): 확인·설명 의무, 금지행위, 대항력·우선변제를 읽어요.
-  - 도구: 부동산 거래·중개 법령 길잡이 https://tools.oiyo.net/ko/realty-brokerage-law-guide/ · 등기·법원 서류 길잡이 https://tools.oiyo.net/ko/registry-court-law-guide/
+  - 도구: 부동산 거래·중개 법령 길잡이 https://tools.oiyo.net/ko/realty-brokerage-law-guide/ · 등기·법원 서류 길잡이 https://tools.oiyo.net/ko/registry-court-law-guide/ · 경매 배당·최우선변제 계산 https://tools.oiyo.net/ko/auction-distribution-calculator/
   - MCP: `search_kr_statutes`
   - 스킬: oiyo-kr-law-guide
 - **중개보수 계산** [계산·평가] (일반인도 씀): 거래 종류·금액별 상한요율로 보수를 계산해요.
@@ -568,4 +601,56 @@ GENERATED from tools-oiyo src/data/pro-competencies.ts. 기준일 2026-11-20. �
 - **자문 범위** [업무 범위·윤리]: 경영 지도는 독점 업무가 아니지만, 세무대리·노무 대리·법률 사무는 해당 자격사에게 넘겨요.
   - 도구: 법령 길잡이 17분야 https://tools.oiyo.net/ko/law-guide/
   - MCP: `get_kr_professional_scope`
+  - 스킬: oiyo-kr-law-guide
+
+## 가맹거래사 (가맹사업거래의 공정화에 관한 법률 제28조)
+
+가맹사업 사업성 검토, 정보공개서·가맹계약서 작성·수정 자문, 분쟁조정 신청 대행
+
+- **가맹사업법 구조** [법령 해석] (일반인도 씀): 정보공개서·가맹금 예치·불공정거래 금지·갱신·해지 규정을 읽어요.
+  - 도구: 가맹계약 기한 점검 https://tools.oiyo.net/ko/franchise-contract-check/
+  - MCP: `search_kr_statutes`
+  - 스킬: oiyo-kr-law-guide
+- **숙려·반환·갱신 기한** [기한·절차] (일반인도 씀): 정보공개서 14일(자문 7일), 가맹금 반환 요구 4개월, 갱신 요구 180~90일 전, 갱신요구권 10년을 날짜로 세요.
+  - 도구: 가맹계약 기한 점검 https://tools.oiyo.net/ko/franchise-contract-check/
+  - 스킬: oiyo-kr-law-guide
+- **가맹점 수익성 검토** [계산·평가] (일반인도 씀): 예상매출액 산정서와 실제 원가로 손익분기·회수 기간을 따져 봐요.
+  - 도구: 단위경제·런웨이 https://tools.oiyo.net/ko/unit-economics-runway-calculator/
+  - 스킬: oiyo-business-strategist
+- **정보공개서·가맹계약서 읽기** [서류·증빙]: 가맹금·인테리어 비용·영업지역·위약금 조항을 찾아 읽어요. 작성·수정 자문은 가맹거래사·변호사 업무예요.
+  - 도구: 전문가 서류 읽는 법 https://tools.oiyo.net/ko/pro-document-reading-guide/
+  - 스킬: oiyo-kr-law-guide
+- **가맹 분쟁 대응 순서** [상담·설계] (일반인도 씀): 서면 요구 → 한국공정거래조정원 조정 → 공정위 신고 순서로 정리하고, 해지 절차(2개월·2회 서면) 위반을 확인해요.
+  - 도구: 가맹계약 기한 점검 https://tools.oiyo.net/ko/franchise-contract-check/ · 불복·이의신청 기한 계산 https://tools.oiyo.net/ko/appeal-deadline-calculator/
+  - 스킬: oiyo-kr-law-guide
+- **정보공개서 열람과 등록** [전자 업무·데이터] (준비 중): 공정위 가맹사업거래 누리집에서 등록된 정보공개서를 비교해요.
+- **가맹거래사 업무 범위** [업무 범위·윤리]: 사업성 검토, 정보공개서·계약서 자문, 분쟁조정 신청 대행이 업무예요(가맹사업법 제28조). 소송 대리는 변호사예요.
+  - 도구: 법령 길잡이 17분야 https://tools.oiyo.net/ko/law-guide/
+  - 스킬: oiyo-kr-law-guide
+
+## 주택관리사 (공동주택관리법 제64조·제67조)
+
+의무관리대상 공동주택의 관리사무소장: 시설·회계·장기수선·하자 관리와 입주자대표회의 지원
+
+- **공동주택관리법·관리규약** [법령 해석] (일반인도 씀): 관리주체·입주자대표회의 권한, 관리비 공개, 사업자 선정 규정을 읽어요.
+  - 도구: 공동주택 하자담보·관리 점검 https://tools.oiyo.net/ko/apartment-management-check/
+  - MCP: `search_kr_statutes`
+  - 스킬: oiyo-kr-law-guide
+- **하자담보책임기간** [기한·절차] (일반인도 씀): 마감 2년·설비 3년·구조·방수 5년·내력구조부 10년을 공용·전유로 나눠 만료 전에 청구해요.
+  - 도구: 공동주택 하자담보·관리 점검 https://tools.oiyo.net/ko/apartment-management-check/
+  - 스킬: oiyo-kr-law-guide
+- **장기수선충당금과 계획** [계산·평가]: 사용검사 1년 뒤부터 적립, 3년마다 계획 검토 시점을 관리해요.
+  - 도구: 공동주택 하자담보·관리 점검 https://tools.oiyo.net/ko/apartment-management-check/
+  - 스킬: oiyo-kr-law-guide
+- **의무관리대상과 관리 방식** [상담·설계] (일반인도 씀): 300세대, 150세대 + 승강기·중앙난방·주상복합 기준으로 판정하고 위탁·자치관리를 비교해요.
+  - 도구: 공동주택 하자담보·관리 점검 https://tools.oiyo.net/ko/apartment-management-check/
+  - 스킬: oiyo-kr-law-guide
+- **관리직원 근무표와 인원** [계산·평가]: 경비·미화 직원의 휴게·연장 한도와 상시근로자 수를 점검해요.
+  - 도구: 상시근로자 수·근무표 점검 https://tools.oiyo.net/ko/workforce-schedule-check/
+  - 스킬: oiyo-kr-law-guide
+- **관리비 공개와 회계 서류** [서류·증빙]: 관리비 등을 다음 달 말일까지 공개하고, 장부와 증빙을 보관해요.
+  - 도구: 전문가 서류 읽는 법 https://tools.oiyo.net/ko/pro-document-reading-guide/
+- **공동주택관리정보시스템 공개** [전자 업무·데이터] (준비 중): 관리비·입찰 정보를 공동주택관리정보시스템에 올리고 다른 단지와 비교해요.
+- **관리사무소장 배치와 책임** [업무 범위·윤리]: 의무관리대상은 주택관리사(보)를 관리사무소장으로 둬야 하고, 손해배상 책임을 보장하는 보증을 들어야 해요(공동주택관리법 제64조·제66조).
+  - 도구: 공동주택 하자담보·관리 점검 https://tools.oiyo.net/ko/apartment-management-check/
   - 스킬: oiyo-kr-law-guide
