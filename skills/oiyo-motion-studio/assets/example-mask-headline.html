@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>마스크 리빌 헤드라인 · OIYO 모션 데모</title>
+<link rel="stylesheet" href="common.css">
+</head>
+<body>
+<div id="s"></div>
+<script src="kit.js"></script>
+<script>
+// 마스크 리빌 헤드라인 — 1080×1080, 5초 반복. 시간 t(초)를 받아 그 순간의 화면을 그린다. 상태를 쌓지 않는다.
+// 글자가 보이지 않는 창(overflow:hidden) 아래에서 올라온다. 줄마다 0.18초씩 늦게.
+const lines = ['코드로 만든', '광고 한 편.', 'frame = f(t)'];
+const box = el(`<div class="abs" style="left:96px;right:96px;top:300px;font-weight:800;font-size:118px;line-height:1.16;letter-spacing:-.045em">${
+  lines.map((l, i) => `<span class="mask"><span class="${i === 2 ? 'gold' : ''}">${l}</span></span>`).join('')}</div>`);
+const spans = [...box.querySelectorAll('.mask>span')];
+const rule = el(`<div class="abs" style="left:96px;top:760px;width:888px;height:4px;background:#f5f5f7;transform-origin:left"></div>`);
+const cap = el(`<p class="abs muted" style="left:96px;top:800px;font-weight:600;font-size:36px">ease-out quint · 0.9초 · 줄 간격 0.18초</p>`);
+const render = t => {
+  const out = eio(sg(t, 4.2, 4.8)); // 끝에서 한꺼번에 내려가며 사라진다 → 반복 이음매
+  spans.forEach((s, i) => { rise(s, sg(t, .2 + i * .18, 1.1 + i * .18)); if (out) s.style.transform = `translate3d(0,${out * 110}%,0)`; });
+  rule.style.transform = `scaleX(${eo(sg(t, .9, 1.9)) * (1 - out)})`;
+  set(cap, eo(sg(t, 1.4, 2)) * (1 - out));
+};
+window.MOTION = { w: 1080, h: 1080, dur: 5, poster: 1.6, bg: '#050505', render };
+</script>
+<script src="stage.js"></script>
+</body>
+</html>
