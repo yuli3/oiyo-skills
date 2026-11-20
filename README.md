@@ -14,6 +14,12 @@
 | [`oiyo-business-strategist`](skills/oiyo-business-strategist/SKILL.md) | 경영자·실무자 | 경영 이론 40가지로 의사결정 메모, 한국 사업자 필수 일정, 1인·소상공인 이번 달 백오피스 한 장, 운영 문제 점검 |
 | [`oiyo-korea-expat-guide`](skills/oiyo-korea-expat-guide/SKILL.md) | 한국에 사는 외국인 (English) | Alien registration 90 days, address report 15 days, stay extension, unpaid wages and the 2026 minimum wage, work injury, health insurance, tax and pension refunds, with deadlines from your dates and official help lines |
 
+## 그 밖의 스킬
+
+| 스킬 | 누가 | 하는 일 |
+| --- | --- | --- |
+| [`oiyo-motion-studio`](skills/oiyo-motion-studio/SKILL.md) | 마케터·1인 사업자·개발자 | 영상 편집기 없이 HTML 한 장으로 세로 광고·숏폼·로고 모션 만들기. 화면 = 시간의 함수(frame = f(t))라서 같은 파일이 웹 데모·썸네일·mp4가 돼요. 뼈대 생성(`new-motion.mjs`), mp4·정지 화면 렌더(`render.cjs`), 작품 17편의 기법 수치 카탈로그. 예시: https://show.oiyo.net/motion/ |
+
 ## 직업별 역량 지도
 
 [COMPETENCIES.md](COMPETENCIES.md)에 세무사·공인회계사·공인노무사·행정사·법무사·보험계리사·손해사정사·보험설계사·관세사·변리사·감정평가사·공인중개사·건축사·의료인·약사·변호사(가사)·사회복지사·경영지도사(17개 직업)에게 필요한 역량을 7가지(법령 해석·계산·기한·서류·상담·업무 범위·전자 업무)로 나누고, 역량마다 쓸 수 있는 도구·MCP·스킬을 연결했어요. 웹 버전: https://tools.oiyo.net/ko/pro-competency-map/

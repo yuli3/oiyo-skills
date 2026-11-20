@@ -1,0 +1,13 @@
+@font-face{font-family:P;src:url(fonts/Pretendard-Regular.subset.woff2), local("Pretendard") format('woff2');font-weight:400;font-display:block}
+@font-face{font-family:P;src:url(fonts/Pretendard-SemiBold.subset.woff2) format('woff2');font-weight:600;font-display:block}
+@font-face{font-family:P;src:url(fonts/Pretendard-ExtraBold.subset.woff2) format('woff2');font-weight:800;font-display:block}
+@font-face{font-family:G;src:url(fonts/GowunBatang-ks-400.woff2) format('woff2');font-display:block}
+*{box-sizing:border-box;margin:0;padding:0}
+#s{overflow:hidden;background:#050505;color:#f5f5f7;font-family:P,sans-serif;word-break:keep-all}
+.abs{position:absolute}.c{left:0;width:100%;text-align:center}
+.mask{display:block;overflow:hidden;padding-bottom:.08em}.mask>span{display:inline-block;will-change:transform}
+.gold{color:#e8c98a}.muted{color:#a1a1a6}
+.grad{background:linear-gradient(180deg,#fff 30%,rgba(255,255,255,.55));-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo{font-weight:800;letter-spacing:.22em;font-size:92px}
+.url{font-weight:600;font-size:38px;letter-spacing:.08em;color:#a1a1a6}
+img{display:block}
