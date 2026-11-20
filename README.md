@@ -8,8 +8,8 @@
 
 | 스킬 | 누가 | 하는 일 |
 | --- | --- | --- |
-| [`oiyo-kr-law-guide`](skills/oiyo-kr-law-guide/SKILL.md) | 누구나 · 종사자 | 법령 길잡이 17분야(세금·회계·노동·행정·등기·보험·관세·특허·감정평가·부동산 중개·건축 인허가·의료 이용·가사·이혼·복지급여·소비자 환불·개인정보 유출 72시간·처리방침·교통사고·프리랜서 외주 계약서 읽기). 선제 질문 → 기한·조문·서류·서식 찾는 곳·창구, 자격사 업무 범위 비교. 실무 계산(과태료 감경, 수입 관세·FTA, IFRS 17 CSM, K-ICS, 장해·과실 보험금, 전표 분석, 보험 설명 기록, 외주 계약서 점검)과 실무 길잡이(영업신고 서류, 체류 기한, 전자 창구 6곳, 전문가 서류 읽는 법) |
-| [`kr-tax-advisor`](skills/kr-tax-advisor/SKILL.md) | 세무·회계 실무자 | 비상장주식 평가, 가업상속공제, 법인전환, DCF 기업가치 계산과 상담 메모. 통장·카드 내역을 분개 표로 바꿔 세무 프로그램(세무사랑·위하고·더존·TP) 엑셀 업로드 순서로 넘기기, 신고 시즌 작업 순서 |
+| [`oiyo-kr-law-guide`](skills/oiyo-kr-law-guide/SKILL.md) | 누구나 · 종사자 | 법령 길잡이 17분야(세금·회계·노동·행정·등기·보험·관세·특허·감정평가·부동산 중개·건축 인허가·의료 이용·가사·이혼·복지급여·소비자 환불·개인정보 유출 72시간·처리방침·교통사고·프리랜서 외주 계약서 읽기). 선제 질문 → 기한·조문·서류·서식 찾는 곳·창구, 자격사 업무 범위 비교. 실무 계산(과태료 감경, 수입 관세·FTA, IFRS 17 CSM, K-ICS, 장해·과실 보험금, 전표 분석, 보험 설명 기록, 외주 계약서 점검, 불복·이의신청 기한 31종)과 실무 길잡이(영업신고 서류, 체류 기한, 전자 창구 6곳, 전문가 서류 읽는 법) |
+| [`kr-tax-advisor`](skills/kr-tax-advisor/SKILL.md) | 세무·회계 실무자 | 비상장주식 평가, 가업상속공제, 법인전환, DCF 기업가치, 법인세·세무조정 한도(업무추진비·기부금·최저한세·중간예납), 가산세(무신고·과소·납부지연, 수정·기한후 감면) 계산과 상담 메모. 통장·카드 내역을 분개 표로 바꿔 세무 프로그램(세무사랑·위하고·더존·TP) 엑셀 업로드 순서로 넘기기, 신고 시즌 작업 순서 |
 | [`oiyo-kr-benefits-navigator`](skills/oiyo-kr-benefits-navigator/SKILL.md) | 누구나 | 근로장려금·출산휴가 급여·체불 대지급금·산재·실업급여 등 생활 지원금과 노동권 계산, 가족이 돌아가신 뒤 할 일(사망신고·상속포기·상속세·연금·보험 청구 기한) |
 | [`oiyo-business-strategist`](skills/oiyo-business-strategist/SKILL.md) | 경영자·실무자 | 경영 이론 40가지로 의사결정 메모, 한국 사업자 필수 일정, 1인·소상공인 이번 달 백오피스 한 장, 운영 문제 점검 |
 | [`oiyo-korea-expat-guide`](skills/oiyo-korea-expat-guide/SKILL.md) | 한국에 사는 외국인 (English) | Alien registration 90 days, address report 15 days, stay extension, unpaid wages and the 2026 minimum wage, work injury, health insurance, tax and pension refunds, with deadlines from your dates and official help lines |
