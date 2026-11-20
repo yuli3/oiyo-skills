@@ -4,7 +4,7 @@
 
 > 이 스킬들은 자격사가 아니에요. 세무대리·노무 대리·행정 서류 작성 대행·등기 신청·손해사정·보험 모집·통관 대행·출원 대리·감정평가·중개를 하지 않고, 법령 정보와 계산까지만 해요. 각 자격법은 자격이 없는 사람이 자격 명칭(또는 비슷한 이름)을 쓰는 것을 금지해서, 스킬 이름에도 쓰지 않아요.
 
-## 스킬 4종
+## 스킬 5종
 
 | 스킬 | 누가 | 하는 일 |
 | --- | --- | --- |
@@ -12,6 +12,7 @@
 | [`kr-tax-advisor`](skills/kr-tax-advisor/SKILL.md) | 세무·회계 실무자 | 비상장주식 평가, 가업상속공제, 법인전환, DCF 기업가치 계산과 상담 메모. 통장·카드 내역을 분개 표로 바꿔 세무 프로그램(세무사랑·위하고·더존·TP) 엑셀 업로드 순서로 넘기기, 신고 시즌 작업 순서 |
 | [`oiyo-kr-benefits-navigator`](skills/oiyo-kr-benefits-navigator/SKILL.md) | 누구나 | 근로장려금·출산휴가 급여·체불 대지급금·산재·실업급여 등 생활 지원금과 노동권 계산, 가족이 돌아가신 뒤 할 일(사망신고·상속포기·상속세·연금·보험 청구 기한) |
 | [`oiyo-business-strategist`](skills/oiyo-business-strategist/SKILL.md) | 경영자·실무자 | 경영 이론 40가지로 의사결정 메모, 한국 사업자 필수 일정, 1인·소상공인 이번 달 백오피스 한 장, 운영 문제 점검 |
+| [`oiyo-korea-expat-guide`](skills/oiyo-korea-expat-guide/SKILL.md) | 한국에 사는 외국인 (English) | Alien registration 90 days, address report 15 days, stay extension, unpaid wages and the 2026 minimum wage, work injury, health insurance, tax and pension refunds, with deadlines from your dates and official help lines |
 
 ## 직업별 역량 지도
 
