@@ -35,6 +35,8 @@
 
 스킬 원본은 tools.oiyo.net 계산기와 같은 엔진에서 생성돼요. 세법·최저임금·보험 규정이 바뀌면 원본을 고친 뒤 이 저장소로 옮기고, `main`에 올라오면 GitHub Actions가 스킬별 zip을 만들어 Releases에 올려요.
 
+- 스킬 안의 조문 링크(law.go.kr)는 매주 월요일 GitHub Actions(`Law citation watch`)가 법제처 원문과 대조해요. 없는 조문·폐지 법령·지난주 뒤 개정된 법령이 있으면 "법령 인용 점검" 이슈가 열려요. 조회는 [korean-law-mcp](https://github.com/chrisryugj/korean-law-mcp) 원격 서버를 쓰고, 저장소 시크릿 `LAW_OC`(법제처 Open API 인증키)를 넣으면 그 키로 조회해요.
+
 ## 라이선스
 
 스킬 설명·참고 문서와 스크립트는 [CC BY-NC 4.0](LICENSE)으로 제공해요. 출처("OIYO Skills — Oiyo Tech, https://github.com/yuli3/oiyo-skills")를 밝히면 비상업적으로 쓰고 고칠 수 있어요. OIYO 이름·로고는 포함되지 않아요. 상업적 이용 문의: support@oiyo.net
