@@ -22,6 +22,7 @@
 | [`oiyo-us-tax-guide`](skills/oiyo-us-tax-guide/SKILL.md) | 🇺🇸 English | 2026 federal deadlines, self-employment tax and QBI, estimated tax safe harbor, IRS penalties and interest, Tax Court/CDP/refund deadlines, de minimis·Section 179·bonus·MACRS. General information and estimates within Circular 230 |
 | [`oiyo-fr-tax-guide`](skills/oiyo-fr-tax-guide/SKILL.md) | 🇫🇷 Français | Calendrier fiscal 2026, micro-entrepreneur (cotisations, versement libératoire), franchise en base de TVA, intérêt de retard et majorations, délais de réclamation, amortissement linéaire·dégressif, qui peut donner un conseil fiscal. Information générale et estimations |
 | [`oiyo-es-tax-guide`](skills/oiyo-es-tax-guide/SKILL.md) | 🇪🇸 Español | Calendario AEAT 2026 (303, 130, 111, Renta, 200, 202), cuota de autónomos por tramos 2026 e IRPF estimado, IVA y recargo de equivalencia, recargo por presentación tardía, sanciones, plazos de recurso, amortización por la tabla oficial. Información general y estimaciones |
+| [`oiyo-cn-tax-guide`](skills/oiyo-cn-tax-guide/SKILL.md) | 🇨🇳 简体中文 | 2026年申报纳税期限、个体工商户经营所得与减半、综合所得、小型微利企业、小规模纳税人起征点与1%、滞纳金与复议诉讼期限、折旧最低年限与一次性扣除。一般信息与估算 |
 
 ## 그 밖의 스킬
 
