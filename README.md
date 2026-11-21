@@ -39,6 +39,18 @@
 
 ## 설치
 
+- **Claude Code 플러그인(추천)**: 세션 안에서 마켓플레이스를 더한 뒤 원하는 묶음을 설치해요. 업데이트는 `/plugin marketplace update oiyo-skills`로 받아요.
+  ```
+  /plugin marketplace add yuli3/oiyo-skills
+  /plugin install oiyo-skills@oiyo-skills
+  ```
+  Claude Code 2.1.275 이상은 한 줄로도 돼요: `/plugin install oiyo-skills --marketplace yuli3/oiyo-skills`
+
+  | 플러그인 | 들어 있는 스킬 |
+  | --- | --- |
+  | `oiyo-skills` | 14종 전체 |
+  | `oiyo-kr` | 한국 5종(법령 길잡이·세무 실무·생활 지원금·경영·외국인 가이드). `/plugin install oiyo-kr --marketplace yuli3/oiyo-skills` |
+  | `oiyo-world` | 나라별 8종(7개국 세무 가이드 + 7개국 퇴직·해고 계산). `/plugin install oiyo-world --marketplace yuli3/oiyo-skills` |
 - **Claude 앱(claude.ai)**: [Releases](https://github.com/yuli3/oiyo-skills/releases/latest)에서 스킬별 zip을 받아 설정 → 기능 → 스킬에 올려요.
 - **Claude Code**: 저장소를 받아 `skills/<이름>` 폴더를 `~/.claude/skills/`에 복사해요.
   ```sh
