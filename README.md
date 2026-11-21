@@ -23,6 +23,8 @@
 | [`oiyo-fr-tax-guide`](skills/oiyo-fr-tax-guide/SKILL.md) | 🇫🇷 Français | Calendrier fiscal 2026, micro-entrepreneur (cotisations, versement libératoire), franchise en base de TVA, intérêt de retard et majorations, délais de réclamation, amortissement linéaire·dégressif, qui peut donner un conseil fiscal. Information générale et estimations |
 | [`oiyo-es-tax-guide`](skills/oiyo-es-tax-guide/SKILL.md) | 🇪🇸 Español | Calendario AEAT 2026 (303, 130, 111, Renta, 200, 202), cuota de autónomos por tramos 2026 e IRPF estimado, IVA y recargo de equivalencia, recargo por presentación tardía, sanciones, plazos de recurso, amortización por la tabla oficial. Información general y estimaciones |
 | [`oiyo-cn-tax-guide`](skills/oiyo-cn-tax-guide/SKILL.md) | 🇨🇳 简体中文 | 2026年申报纳税期限、个体工商户经营所得与减半、综合所得、小型微利企业、小规模纳税人起征点与1%、滞纳金与复议诉讼期限、折旧最低年限与一次性扣除。一般信息与估算 |
+| [`oiyo-uk-tax-guide`](skills/oiyo-uk-tax-guide/SKILL.md) | 🇬🇧 English (UK) | Self Assessment, MTD, Corporation Tax and VAT deadlines; self-employed Income Tax and Class 2/4 NI; £90k VAT registration and Flat Rate Scheme; HMRC penalties, interest and appeal dates; AIA, full expensing, 40% FYA and WDA. General information and estimates |
+| [`oiyo-tw-tax-guide`](skills/oiyo-tw-tax-guide/SKILL.md) | 🇹🇼 繁體中文 | 綜所稅與營所稅申報期限、營業稅單月15日、114與115年度級距與扣除額、營業稅起徵點10萬／5萬與小規模1%、滯納金與復查訴願期限、耐用年數表折舊與8萬元費用化。一般資訊與試算 |
 
 ## 그 밖의 스킬
 
