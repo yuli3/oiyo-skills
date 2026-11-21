@@ -14,6 +14,12 @@
 | [`oiyo-business-strategist`](skills/oiyo-business-strategist/SKILL.md) | 경영자·실무자 | 경영 이론 40가지로 의사결정 메모, 한국 사업자 필수 일정, 1인·소상공인 이번 달 백오피스 한 장, 운영 문제 점검 |
 | [`oiyo-korea-expat-guide`](skills/oiyo-korea-expat-guide/SKILL.md) | 한국에 사는 외국인 (English) | Alien registration 90 days, address report 15 days, stay extension, unpaid wages and the 2026 minimum wage, work injury, health insurance, tax and pension refunds, with deadlines from your dates and official help lines |
 
+## 나라별 세무·회계 가이드 (현지 법 기준, 번역 아님)
+
+| 스킬 | 나라·언어 | 하는 일 |
+| --- | --- | --- |
+| [`oiyo-jp-tax-guide`](skills/oiyo-jp-tax-guide/SKILL.md) | 🇯🇵 日本語 | 個人事業主の申告・納付期限、青色申告特別控除の比較、消費税の納税義務と2割・3割特例、加算税・延滞税、不服申立て期限、減価償却。税理士法の範囲内で一般的な情報と概算だけ |
+
 ## 그 밖의 스킬
 
 | 스킬 | 누가 | 하는 일 |
