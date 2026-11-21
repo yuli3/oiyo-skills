@@ -25,6 +25,7 @@
 | [`oiyo-cn-tax-guide`](skills/oiyo-cn-tax-guide/SKILL.md) | 🇨🇳 简体中文 | 2026年申报纳税期限、个体工商户经营所得与减半、综合所得、小型微利企业、小规模纳税人起征点与1%、滞纳金与复议诉讼期限、折旧最低年限与一次性扣除。一般信息与估算 |
 | [`oiyo-uk-tax-guide`](skills/oiyo-uk-tax-guide/SKILL.md) | 🇬🇧 English (UK) | Self Assessment, MTD, Corporation Tax and VAT deadlines; self-employed Income Tax and Class 2/4 NI; £90k VAT registration and Flat Rate Scheme; HMRC penalties, interest and appeal dates; AIA, full expensing, 40% FYA and WDA. General information and estimates |
 | [`oiyo-tw-tax-guide`](skills/oiyo-tw-tax-guide/SKILL.md) | 🇹🇼 繁體中文 | 綜所稅與營所稅申報期限、營業稅單月15日、114與115年度級距與扣除額、營業稅起徵點10萬／5萬與小規模1%、滯納金與復查訴願期限、耐用年數表折舊與8萬元費用化。一般資訊與試算 |
+| [`oiyo-world-labor-guide`](skills/oiyo-world-labor-guide/SKILL.md) | 🌐 7개국 (JP·UK·US·FR·ES·CN·TW, 각국 언어) | 퇴직·해고 때 법정 계산: 解雇予告手当·基本手当 일수, UK redundancy pay·notice·tribunal 기한, US 최저임금·overtime·WARN·EEOC, FR indemnité légale·rupture conventionnelle, ES despido 33/20 días·paro, CN 经济补偿 N/2N, TW 資遣費·預告期間·特休. 일반 정보와 추정, 법률 자문·대리 없음 |
 
 ## 그 밖의 스킬
 
