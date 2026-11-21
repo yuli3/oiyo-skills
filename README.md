@@ -19,6 +19,7 @@
 | 스킬 | 나라·언어 | 하는 일 |
 | --- | --- | --- |
 | [`oiyo-jp-tax-guide`](skills/oiyo-jp-tax-guide/SKILL.md) | 🇯🇵 日本語 | 個人事業主の申告・納付期限、青色申告特別控除の比較、消費税の納税義務と2割・3割特例、加算税・延滞税、不服申立て期限、減価償却。税理士法の範囲内で一般的な情報と概算だけ |
+| [`oiyo-us-tax-guide`](skills/oiyo-us-tax-guide/SKILL.md) | 🇺🇸 English | 2026 federal deadlines, self-employment tax and QBI, estimated tax safe harbor, IRS penalties and interest, Tax Court/CDP/refund deadlines, de minimis·Section 179·bonus·MACRS. General information and estimates within Circular 230 |
 
 ## 그 밖의 스킬
 
