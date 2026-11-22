@@ -42,6 +42,7 @@
 | [`oiyo-world-corporate-tax-guide`](skills/oiyo-world-corporate-tax-guide/SKILL.md) | 🌐 6곳 (실무자) | 법인세 2026 국세: 일본 23.2%·중소 15%, 영국 19/25%+marginal relief, 미국 21%, 프랑스 25%·PME 15%, 스페인 2026 세율, 독일 KSt 15%+GewSt(Hebesatz). 지방세 미포함 |
 | [`oiyo-world-home-purchase-guide`](skills/oiyo-world-home-purchase-guide/SKILL.md) | 🌐 5곳 (일반인) | 집 살 때 세금: 영국 Stamp Duty(생애최초·추가주택 5%·비거주자 2%), 일본 不動産取得税·登録免許税·印紙税, 프랑스 droits de mutation, 스페인 ITP·IVA·AJD, 중국 契税 |
 | [`oiyo-de-everyday-law-guide`](skills/oiyo-de-everyday-law-guide/SKILL.md) | 🇩🇪 독일 (일반인) | 생활법 5종: 상속세(§§15·16·19 ErbStG), 임금 압류한도(2026.7.1 고시), 14일 철회, 보증금 상한, 3년 소멸시효 |
+| [`oiyo-world-late-payment-guide`](skills/oiyo-world-late-payment-guide/SKILL.md) | 🌐 4곳 (실무자) | 기업 간 지연이자: 독일 10.52%+€40, 프랑스 ECB+10+€40, 스페인 10.40%, 영국 8%+기준금리+£40/70/100 |
 
 ## 그 밖의 스킬
 
