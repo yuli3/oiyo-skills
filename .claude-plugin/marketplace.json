@@ -7,7 +7,7 @@
     {
       "name": "oiyo-skills",
       "source": "./",
-      "description": "OIYO 스킬 전체 21종: 각국 길잡이(질문을 현지 도구로 안내), 한국 법령 길잡이·세무 실무·생활 지원금·경영·외국인 가이드, 7개국 세무 가이드, 7개국 퇴직·해고 계산, 7개국 임대차(보증금·해지 예고·임대료 인상), 7개국 청약철회·환불 기한, 5곳 상속·증여 기한과 공제, 6곳 소멸시효·소액 소송, 4개국 고용주 급여 비용, 4개국 회사 연간 신고 일정, HTML 모션.",
+      "description": "OIYO 스킬 전체 22종: 각국 길잡이(질문을 현지 도구로 안내), 한국 법령 길잡이·세무 실무·생활 지원금·경영·외국인 가이드, 7개국 세무 가이드, 7개국 퇴직·해고 계산, 7개국 임대차(보증금·해지 예고·임대료 인상), 7개국 청약철회·환불 기한, 5곳 상속·증여 기한과 공제, 6곳 소멸시효·소액 소송, 4개국 고용주 급여 비용, 4개국 회사 연간 신고 일정, 3개국 전자세금계산서·인보이스 일정, HTML 모션.",
       "category": "productivity",
       "tags": ["korea", "tax", "law", "labor", "accounting"]
     },
@@ -30,9 +30,9 @@
       "name": "oiyo-world",
       "source": "./",
       "strict": false,
-      "description": "나라별 스킬 15종만: 각국 길잡이, 일본·미국·프랑스·스페인·중국·영국·대만 세무 가이드(각국 언어), 7개국 퇴직·해고 법정 계산, 7개국 임대차 보증금·해지 예고·임대료 인상, 7개국 청약철회·환불 기한, 5곳 상속·증여 기한과 공제, 6곳 소멸시효·소액 소송, 4개국 고용주 사회보험 비용, 4개국 회사 연간 신고 일정.",
+      "description": "나라별 스킬 16종만: 각국 길잡이, 일본·미국·프랑스·스페인·중국·영국·대만 세무 가이드(각국 언어), 7개국 퇴직·해고 법정 계산, 7개국 임대차 보증금·해지 예고·임대료 인상, 7개국 청약철회·환불 기한, 5곳 상속·증여 기한과 공제, 6곳 소멸시효·소액 소송, 4개국 고용주 사회보험 비용, 4개국 회사 연간 신고 일정, 3개국 전자세금계산서·인보이스 일정.",
       "category": "productivity",
-      "tags": ["tax", "labor", "tenancy", "consumer", "inheritance", "claims", "payroll", "company", "japan", "usa", "uk", "france", "spain", "china", "taiwan"],
+      "tags": ["tax", "labor", "tenancy", "consumer", "inheritance", "claims", "payroll", "company", "einvoice", "japan", "usa", "uk", "france", "spain", "china", "taiwan"],
       "skills": [
         "./skills/oiyo-world-law-intake",
         "./skills/oiyo-jp-tax-guide",
@@ -48,7 +48,8 @@
         "./skills/oiyo-world-inheritance-guide",
         "./skills/oiyo-world-claims-guide",
         "./skills/oiyo-world-employer-cost-guide",
-        "./skills/oiyo-world-company-calendar"
+        "./skills/oiyo-world-company-calendar",
+        "./skills/oiyo-world-einvoice-guide"
       ]
     }
   ]
