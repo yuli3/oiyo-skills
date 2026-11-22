@@ -40,6 +40,7 @@
 | [`oiyo-world-take-home-guide`](skills/oiyo-world-take-home-guide/SKILL.md) | 🌐 5곳 (현지어) | 근로자 실수령액 2026: 영국(소득세·NI 8%/2%·학자금), 미국(연방세·FICA, 주세 제외), 일본(社会保険料·所得税·住民税), 프랑스(cotisations·IR), 스페인(cotizaciones·IRPF) |
 | [`oiyo-world-withholding-guide`](skills/oiyo-world-withholding-guide/SKILL.md) | 🌐 6곳 (실무자) | 비거주자 지급 원천징수 국내 세율: 일본 20.42%·15.315%, 미국 30%, 프랑스 182 B, 스페인 IRNR 24%/19%, 대만 20%·21%·18%, 독일 §50a 15%/30%. 조세조약 세율 미적용 |
 | [`oiyo-world-corporate-tax-guide`](skills/oiyo-world-corporate-tax-guide/SKILL.md) | 🌐 6곳 (실무자) | 법인세 2026 국세: 일본 23.2%·중소 15%, 영국 19/25%+marginal relief, 미국 21%, 프랑스 25%·PME 15%, 스페인 2026 세율, 독일 KSt 15%+GewSt(Hebesatz). 지방세 미포함 |
+| [`oiyo-world-home-purchase-guide`](skills/oiyo-world-home-purchase-guide/SKILL.md) | 🌐 5곳 (일반인) | 집 살 때 세금: 영국 Stamp Duty(생애최초·추가주택 5%·비거주자 2%), 일본 不動産取得税·登録免許税·印紙税, 프랑스 droits de mutation, 스페인 ITP·IVA·AJD, 중국 契税 |
 
 ## 그 밖의 스킬
 
