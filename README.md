@@ -37,6 +37,7 @@
 | [`oiyo-world-tax-residency-guide`](skills/oiyo-world-tax-residency-guide/SKILL.md) | 🌐 6개국 (US·UK·ES·TW·JP·FR, 각국 언어) | 세법상 거주자 판정: US substantial presence test(31일·가중 183일), UK statutory residence test(자동 테스트·ties 표), ES 183일 초과·경제 중심, TW 戶籍 31天·無住所 183天, JP·FR은 요건 안내만. 조세조약 판정 없음, 일반 정보 |
 | [`oiyo-de-guide`](skills/oiyo-de-guide/SKILL.md) | 🇩🇪 독일 (Deutsch) | Einkommensteuer 2026(§32a EStG, Splitting, Soli), Kündigungsfrist(§622 BGB), Mindestlohn 13,90 €·Minijob 603 €, E-Rechnung(수신 2025, 발행 2027/2028). Kirchensteuer 미계산 |
 | [`oiyo-sg-guide`](skills/oiyo-sg-guide/SKILL.md) | 🇸🇬 싱가포르 (English) | 소득세(IRAS 거주자 0~24%·YA 2025 리베이트·비거주자 15%/24%), CPF 2026 요율(나이별 사용자·근로자, 월 $8,000 상한), Employment Act 해고 예고(1일·1주·2주·4주) |
+| [`oiyo-world-take-home-guide`](skills/oiyo-world-take-home-guide/SKILL.md) | 🌐 5곳 (현지어) | 근로자 실수령액 2026: 영국(소득세·NI 8%/2%·학자금), 미국(연방세·FICA, 주세 제외), 일본(社会保険料·所得税·住民税), 프랑스(cotisations·IR), 스페인(cotizaciones·IRPF) |
 
 ## 그 밖의 스킬
 

@@ -52,7 +52,8 @@
         "./skills/oiyo-world-einvoice-guide",
         "./skills/oiyo-world-tax-residency-guide",
         "./skills/oiyo-de-guide",
-        "./skills/oiyo-sg-guide"
+        "./skills/oiyo-sg-guide",
+        "./skills/oiyo-world-take-home-guide"
       ]
     }
   ]
