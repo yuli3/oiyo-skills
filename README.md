@@ -32,6 +32,7 @@
 | [`oiyo-world-inheritance-guide`](skills/oiyo-world-inheritance-guide/SKILL.md) | 🌐 5곳 (JP·UK·US·FR·TW, 각국 언어) | 상속·증여: 相続税 基礎控除·10か月·速算表, 贈与税 110万円, UK IHT £325k/£175k·6개월 차 말 납부·7년 증여, US 2026 exclusion $15M·$19k·Form 706/709, FR abattement·barème·6 mois, TW 遺產稅 死亡次日起六個月(115년 개정). 일반 정보와 추정, 세무 자문·신고 대리 없음 |
 | [`oiyo-world-claims-guide`](skills/oiyo-world-claims-guide/SKILL.md) | 🌐 6곳 (JP·England·CA·FR·TW·CN, 각국 언어) | 민사 소멸시효와 소액 소송: 消滅時効 5年/10年·少額訴訟 60万円, Limitation Act 6/3년·£10,000·법원 수수료, CA 2/3/4년·$12,500, FR prescription 5 ans/2 ans·injonction de payer, TW 民法 15/5/2年·小額 10萬, CN 小额诉讼 기준. 일반 정보, 법률 자문·소송 대리 없음 |
 | [`oiyo-world-employer-cost-guide`](skills/oiyo-world-employer-cost-guide/SKILL.md) | 🌐 4개국 (JP·UK·US·ES, 각국 언어) | 고용주 급여 비용: 協会けんぽ·厚生年金 18.3% 折半·子ども・子育て拠出金 0.36%·雇用保険 令和8年度, UK employer NICs 15%·£5,000·Employment Allowance £10,500, US FICA 6.2%($184,500)+1.45%, ES contingencias comunes 23,60 %. 일반 추정, 급여 대행·신고 없음 |
+| [`oiyo-world-company-calendar`](skills/oiyo-world-company-calendar/SKILL.md) | 🌐 4개국 (JP·UK·US·FR, 각국 언어) | 결산일 기준 회사 연간 일정: 法人税 確定申告 2か月·中間申告·消費税 延長届出, Companies House accounts 9개월·CT 납부 9개월+1일·CT600 12개월·가산금, Form 1120/1120-S/1065·Form 7004 연장(6월 결산 예외), approbation des comptes 6 mois·dépôt au greffe. 일반 정보, 신고 대행 없음 |
 
 ## 그 밖의 스킬
 
@@ -54,9 +55,9 @@
 
   | 플러그인 | 들어 있는 스킬 |
   | --- | --- |
-  | `oiyo-skills` | 20종 전체 |
+  | `oiyo-skills` | 21종 전체 |
   | `oiyo-kr` | 한국 5종(법령 길잡이·세무 실무·생활 지원금·경영·외국인 가이드). `/plugin install oiyo-kr --marketplace yuli3/oiyo-skills` |
-  | `oiyo-world` | 나라별 14종(각국 길잡이 + 7개국 세무 가이드 + 7개국 퇴직·해고 계산 + 7개국 임대차 + 7개국 청약철회 + 5곳 상속·증여 + 6곳 소멸시효·소액 소송 + 4개국 고용주 급여 비용). `/plugin install oiyo-world --marketplace yuli3/oiyo-skills` |
+  | `oiyo-world` | 나라별 15종(각국 길잡이 + 7개국 세무 가이드 + 7개국 퇴직·해고 계산 + 7개국 임대차 + 7개국 청약철회 + 5곳 상속·증여 + 6곳 소멸시효·소액 소송 + 4개국 고용주 급여 비용 + 4개국 회사 연간 일정). `/plugin install oiyo-world --marketplace yuli3/oiyo-skills` |
 - **Claude 앱(claude.ai)**: [Releases](https://github.com/yuli3/oiyo-skills/releases/latest)에서 스킬별 zip을 받아 설정 → 기능 → 스킬에 올려요.
 - **Claude Code**: 저장소를 받아 `skills/<이름>` 폴더를 `~/.claude/skills/`에 복사해요.
   ```sh
