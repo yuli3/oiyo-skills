@@ -38,6 +38,7 @@
 | [`oiyo-de-guide`](skills/oiyo-de-guide/SKILL.md) | 🇩🇪 독일 (Deutsch) | Einkommensteuer 2026(§32a EStG, Splitting, Soli), Kündigungsfrist(§622 BGB), Mindestlohn 13,90 €·Minijob 603 €, E-Rechnung(수신 2025, 발행 2027/2028). Kirchensteuer 미계산 |
 | [`oiyo-sg-guide`](skills/oiyo-sg-guide/SKILL.md) | 🇸🇬 싱가포르 (English) | 소득세(IRAS 거주자 0~24%·YA 2025 리베이트·비거주자 15%/24%), CPF 2026 요율(나이별 사용자·근로자, 월 $8,000 상한), Employment Act 해고 예고(1일·1주·2주·4주) |
 | [`oiyo-world-take-home-guide`](skills/oiyo-world-take-home-guide/SKILL.md) | 🌐 5곳 (현지어) | 근로자 실수령액 2026: 영국(소득세·NI 8%/2%·학자금), 미국(연방세·FICA, 주세 제외), 일본(社会保険料·所得税·住民税), 프랑스(cotisations·IR), 스페인(cotizaciones·IRPF) |
+| [`oiyo-world-withholding-guide`](skills/oiyo-world-withholding-guide/SKILL.md) | 🌐 6곳 (실무자) | 비거주자 지급 원천징수 국내 세율: 일본 20.42%·15.315%, 미국 30%, 프랑스 182 B, 스페인 IRNR 24%/19%, 대만 20%·21%·18%, 독일 §50a 15%/30%. 조세조약 세율 미적용 |
 
 ## 그 밖의 스킬
 
