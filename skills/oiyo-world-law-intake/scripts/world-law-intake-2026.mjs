@@ -20,7 +20,7 @@ export const INTAKE_AS_OF = "2026-11-22";
  *  pro: running a business or advising one (filing calendars, penalties, appeals, depreciation, VAT, payroll cost, e-invoicing). */
                                         
                                                                                                                                             
-const PRO = /depreciation|capital_allowances|penalty|late_fee|late_payment|late_filing|tax_sanction|appeal|claim_deadline|calendar|employer_cost|einvoic|invoice_transition|verifactu|vat|business_tax|business_income_tax|small_profit|consumption_tax|blue_return|micro_entrepreneur|autonomo|self_employ|estimated_tax/;
+const PRO = /corporate_tax|withholding|depreciation|capital_allowances|penalty|late_fee|late_payment|late_filing|tax_sanction|appeal|claim_deadline|calendar|employer_cost|einvoic|invoice_transition|verifactu|vat|business_tax|business_income_tax|small_profit|consumption_tax|blue_return|micro_entrepreneur|autonomo|self_employ|estimated_tax/;
 export const audienceOf = (mcp        )           => (PRO.test(mcp) ? "pro" : "person");
 
 const T = "https://tools.oiyo.net/";
@@ -125,6 +125,23 @@ export const WORLD_TOOLS               = [
   t("TW", "tenancy", "check_tw_rental_deposit_termination", "zh/taiwan-rental-deposit-termination", "租屋押金與提前終止", ["租屋", "押金", "房東", "房客", "租約", "提前終止", "退租"]),
   t("TW", "claims", "check_tw_limitation_small_claims", "zh/taiwan-statute-limitation-small-claims", "消滅時效與小額訴訟", ["時效", "消滅時效", "小額訴訟", "欠錢", "欠款", "起訴", "打官司"]),
   t("TW", "consumer", "check_tw_7day_cancellation", "zh/taiwan-7-day-cancellation", "七日解約權", ["七日鑑賞期", "鑑賞期", "七天", "退貨", "網購", "解約", "退款"]),
+  t("JP", "labor", "calculate_jp_take_home", "ja/japan-salary-calculator", "給与の手取り（社会保険料・所得税・住民税）", ["手取り", "給料", "給与", "月給", "年収", "天引き", "take home", "net pay"]),
+  t("UK", "labor", "calculate_uk_take_home", "en/uk-take-home-pay-calculator-2026", "Take-home pay 2026-27 (tax, NI, student loan)", ["take home", "take-home", "net pay", "salary after tax", "payslip", "how much will i get", "student loan"]),
+  t("US", "labor", "calculate_us_take_home", "en/us-take-home-pay-calculator-2026", "Take-home pay 2026 (federal tax and FICA)", ["take home", "take-home", "net pay", "paycheck", "after tax", "fica", "salary after tax"]),
+  t("FR", "labor", "calculate_fr_take_home", "fr/france-salary-calculator", "Salaire net après impôt (brut en net)", ["brut en net", "salaire net", "net après impôt", "fiche de paie", "salaire brut", "combien je touche"]),
+  t("ES", "labor", "calculate_es_take_home", "es/spain-salary-calculator", "Salario neto (bruto a neto, IRPF y cotizaciones)", ["salario neto", "bruto a neto", "nómina", "cuánto cobro", "sueldo neto", "neto"]),
+  t("JP", "tax", "calculate_jp_corporate_tax", "en/corporate-tax-calculator-2026", "法人税額（税率23.2%・中小法人15%）", ["法人税率", "法人税額", "中小法人", "軽減税率", "800万円", "資本金1億円", "法人税 いくら", "法人税の計算"]),
+  t("UK", "tax", "calculate_uk_corporate_tax", "en/corporate-tax-calculator-2026", "Corporation Tax with marginal relief", ["corporation tax rate", "marginal relief", "small profits rate", "associated companies", "how much corporation tax", "ct rate"]),
+  t("US", "tax", "calculate_us_corporate_tax", "en/corporate-tax-calculator-2026", "Federal corporate income tax (21%)", ["corporate tax rate", "c corporation tax", "c corp", "21%", "federal corporate tax", "how much corporate tax"]),
+  t("FR", "tax", "calculate_fr_corporate_tax", "en/corporate-tax-calculator-2026", "Impôt sur les sociétés (taux normal et taux réduit PME)", ["impôt sur les sociétés", "taux réduit", "42 500", "is pme", "taux de l'is", "combien d'is"]),
+  t("ES", "tax", "calculate_es_corporate_tax", "en/corporate-tax-calculator-2026", "Impuesto sobre Sociedades (tipos 2026)", ["impuesto sobre sociedades", "tipo de gravamen", "microempresa", "reducida dimensión", "nueva creación", "cuánto pago de sociedades"]),
+  t("DE", "tax", "calculate_de_corporate_tax", "en/corporate-tax-calculator-2026", "Körperschaftsteuer und Gewerbesteuer", ["körperschaftsteuer", "gewerbesteuer", "hebesatz", "gmbh steuer", "kapitalgesellschaft", "unternehmenssteuer"]),
+  t("JP", "tax", "check_jp_withholding", "en/withholding-tax-non-resident-payments", "非居住者への支払と源泉徴収税率", ["非居住者", "源泉徴収", "海外", "使用料", "20.42", "外国法人", "withholding"]),
+  t("US", "tax", "check_us_withholding", "en/withholding-tax-non-resident-payments", "NRA withholding on payments to non-residents (30%)", ["nra withholding", "withholding", "non-resident", "nonresident", "fdap", "1042", "w-8ben", "foreign contractor"]),
+  t("FR", "tax", "check_fr_withholding", "en/withholding-tax-non-resident-payments", "Retenue à la source sur paiements aux non-résidents (art. 182 B)", ["retenue à la source", "non-résident", "182 b", "redevances", "prestataire étranger"]),
+  t("ES", "tax", "check_es_withholding", "en/withholding-tax-non-resident-payments", "Retenciones IRNR a no residentes", ["no residente", "irnr", "retención", "modelo 216", "cánones", "pago al extranjero"]),
+  t("TW", "tax", "check_tw_withholding", "en/withholding-tax-non-resident-payments", "非居住者扣繳率", ["非居住者", "扣繳", "權利金", "外國", "境外", "扣繳率"]),
+  t("DE", "tax", "check_de_withholding", "en/withholding-tax-non-resident-payments", "Steuerabzug nach § 50a EStG", ["50a", "steuerabzug", "beschränkt steuerpflichtig", "lizenz", "ausland", "quellensteuer"]),
   t("DE", "tax", "calculate_de_income_tax", "de/einkommensteuer-rechner-2026", "Einkommensteuer 2026 und Solidaritätszuschlag", ["einkommensteuer", "steuer", "zve", "grundfreibetrag", "splitting", "soli", "solidaritätszuschlag", "steuersatz", "income tax"]),
   t("DE", "labor", "calculate_de_notice_period", "de/kuendigungsfrist-rechner", "Kündigungsfrist nach § 622 BGB", ["kündigung", "kündigungsfrist", "gekündigt", "kündigen", "probezeit", "letzter arbeitstag", "notice", "fired", "dismissal"]),
   t("DE", "labor", "check_de_minimum_wage", "de/kuendigungsfrist-rechner", "Mindestlohn und Minijob-Grenze", ["mindestlohn", "minijob", "stundenlohn", "minimum wage", "603", "13,90", "13.90"]),
