@@ -44,6 +44,7 @@
 | [`oiyo-de-everyday-law-guide`](skills/oiyo-de-everyday-law-guide/SKILL.md) | 🇩🇪 독일 (일반인) | 생활법 5종: 상속세(§§15·16·19 ErbStG), 임금 압류한도(2026.7.1 고시), 14일 철회, 보증금 상한, 3년 소멸시효 |
 | [`oiyo-world-late-payment-guide`](skills/oiyo-world-late-payment-guide/SKILL.md) | 🌐 4곳 (실무자) | 기업 간 지연이자: 독일 10.52%+€40, 프랑스 ECB+10+€40, 스페인 10.40%, 영국 8%+기준금리+£40/70/100 |
 | [`oiyo-world-parental-pay-guide`](skills/oiyo-world-parental-pay-guide/SKILL.md) | 🌐 영국·일본·독일 (일반인) | 육아휴직 급여·아동수당: 영국 SMP·Child Benefit(£6만 초과 환수), 일본 育児休業給付金(2026.8 상한), 독일 Elterngeld·Kindergeld |
+| [`oiyo-small-business-vat-guide`](skills/oiyo-small-business-vat-guide/SKILL.md) | 🌐 독일·싱가포르 (실무자) | 소규모 사업자 부가세: 독일 Kleinunternehmer(2025년부터 €2.5만/€10만 순매출), 싱가포르 GST 등록(S$100만, 신청·등록일) |
 
 ## 그 밖의 스킬
 

@@ -59,7 +59,8 @@
         "./skills/oiyo-world-home-purchase-guide",
         "./skills/oiyo-de-everyday-law-guide",
         "./skills/oiyo-world-late-payment-guide",
-        "./skills/oiyo-world-parental-pay-guide"
+        "./skills/oiyo-world-parental-pay-guide",
+        "./skills/oiyo-small-business-vat-guide"
       ]
     }
   ]
