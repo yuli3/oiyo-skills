@@ -18,6 +18,7 @@
 
 | 스킬 | 나라·언어 | 하는 일 |
 | --- | --- | --- |
+| [`oiyo-world-law-intake`](skills/oiyo-world-law-intake/SKILL.md) | 🌐 7곳 길잡이 (현지어 질문) | 세금·퇴직·임대차 질문을 일본·미국·프랑스·스페인·중국·영국·대만의 현지 도구(페이지·MCP)로 안내하고, 무료 공식 창구와 세무 자격사 범위를 알려 줘요. 계산 아님 |
 | [`oiyo-jp-tax-guide`](skills/oiyo-jp-tax-guide/SKILL.md) | 🇯🇵 日本語 | 個人事業主の申告・納付期限、青色申告特別控除の比較、消費税の納税義務と2割・3割特例、加算税・延滞税、不服申立て期限、減価償却。税理士法の範囲内で一般的な情報と概算だけ |
 | [`oiyo-us-tax-guide`](skills/oiyo-us-tax-guide/SKILL.md) | 🇺🇸 English | 2026 federal deadlines, self-employment tax and QBI, estimated tax safe harbor, IRS penalties and interest, Tax Court/CDP/refund deadlines, de minimis·Section 179·bonus·MACRS. General information and estimates within Circular 230 |
 | [`oiyo-fr-tax-guide`](skills/oiyo-fr-tax-guide/SKILL.md) | 🇫🇷 Français | Calendrier fiscal 2026, micro-entrepreneur (cotisations, versement libératoire), franchise en base de TVA, intérêt de retard et majorations, délais de réclamation, amortissement linéaire·dégressif, qui peut donner un conseil fiscal. Information générale et estimations |
@@ -49,9 +50,9 @@
 
   | 플러그인 | 들어 있는 스킬 |
   | --- | --- |
-  | `oiyo-skills` | 15종 전체 |
+  | `oiyo-skills` | 16종 전체 |
   | `oiyo-kr` | 한국 5종(법령 길잡이·세무 실무·생활 지원금·경영·외국인 가이드). `/plugin install oiyo-kr --marketplace yuli3/oiyo-skills` |
-  | `oiyo-world` | 나라별 9종(7개국 세무 가이드 + 7개국 퇴직·해고 계산 + 7개국 임대차). `/plugin install oiyo-world --marketplace yuli3/oiyo-skills` |
+  | `oiyo-world` | 나라별 10종(각국 길잡이 + 7개국 세무 가이드 + 7개국 퇴직·해고 계산 + 7개국 임대차). `/plugin install oiyo-world --marketplace yuli3/oiyo-skills` |
 - **Claude 앱(claude.ai)**: [Releases](https://github.com/yuli3/oiyo-skills/releases/latest)에서 스킬별 zip을 받아 설정 → 기능 → 스킬에 올려요.
 - **Claude Code**: 저장소를 받아 `skills/<이름>` 폴더를 `~/.claude/skills/`에 복사해요.
   ```sh
