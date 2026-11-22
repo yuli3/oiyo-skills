@@ -36,7 +36,7 @@
 | [`oiyo-world-einvoice-guide`](skills/oiyo-world-einvoice-guide/SKILL.md) | 🌐 3개국 (FR·JP·ES, 각국 언어) | 전자세금계산서·인보이스 일정: FR facturation électronique 수신 2026-09-01·발행 GE/ETI 2026·PME/micro 2027, JP インボイス 経過措置 80%→70%(令和8年10月〜)→50%→30%, ES VERI*FACTU sociedades 2027-01-01·autónomos 2027-07-01. 일반 정보, 신고 대행·소프트웨어 인증 없음 |
 | [`oiyo-world-tax-residency-guide`](skills/oiyo-world-tax-residency-guide/SKILL.md) | 🌐 6개국 (US·UK·ES·TW·JP·FR, 각국 언어) | 세법상 거주자 판정: US substantial presence test(31일·가중 183일), UK statutory residence test(자동 테스트·ties 표), ES 183일 초과·경제 중심, TW 戶籍 31天·無住所 183天, JP·FR은 요건 안내만. 조세조약 판정 없음, 일반 정보 |
 | [`oiyo-de-guide`](skills/oiyo-de-guide/SKILL.md) | 🇩🇪 독일 (Deutsch) | Einkommensteuer 2026(§32a EStG, Splitting, Soli), Kündigungsfrist(§622 BGB), Mindestlohn 13,90 €·Minijob 603 €, E-Rechnung(수신 2025, 발행 2027/2028). Kirchensteuer 미계산 |
-| [`oiyo-sg-guide`](skills/oiyo-sg-guide/SKILL.md) | 🇸🇬 싱가포르 (English) | CPF 2026 요율(나이별 사용자·근로자, 월 $8,000 상한), Employment Act 해고 예고(1일·1주·2주·4주). 소득세 미포함 |
+| [`oiyo-sg-guide`](skills/oiyo-sg-guide/SKILL.md) | 🇸🇬 싱가포르 (English) | 소득세(IRAS 거주자 0~24%·YA 2025 리베이트·비거주자 15%/24%), CPF 2026 요율(나이별 사용자·근로자, 월 $8,000 상한), Employment Act 해고 예고(1일·1주·2주·4주) |
 
 ## 그 밖의 스킬
 
