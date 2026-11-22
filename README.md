@@ -18,7 +18,7 @@
 
 | 스킬 | 나라·언어 | 하는 일 |
 | --- | --- | --- |
-| [`oiyo-world-law-intake`](skills/oiyo-world-law-intake/SKILL.md) | 🌐 7곳 길잡이 (현지어 질문) | 세금·퇴직·임대차 질문을 일본·미국·프랑스·스페인·중국·영국·대만의 현지 도구(페이지·MCP)로 안내하고, 무료 공식 창구와 세무 자격사 범위를 알려 줘요. 계산 아님 |
+| [`oiyo-world-law-intake`](skills/oiyo-world-law-intake/SKILL.md) | 🌐 9곳 길잡이 (현지어 질문) | 세금·퇴직·임대차·소비자·소송 질문을 일본·미국·프랑스·스페인·중국·영국·대만·독일·싱가포르의 현지 도구(페이지·MCP)로 안내하고, 무료 공식 창구와 세무 자격사 범위를 알려 줘요. 일반인/실무자(audience)로 거를 수 있어요. 계산 아님 |
 | [`oiyo-jp-tax-guide`](skills/oiyo-jp-tax-guide/SKILL.md) | 🇯🇵 日本語 | 個人事業主の申告・納付期限、青色申告特別控除の比較、消費税の納税義務と2割・3割特例、加算税・延滞税、不服申立て期限、減価償却。税理士法の範囲内で一般的な情報と概算だけ |
 | [`oiyo-us-tax-guide`](skills/oiyo-us-tax-guide/SKILL.md) | 🇺🇸 English | 2026 federal deadlines, self-employment tax and QBI, estimated tax safe harbor, IRS penalties and interest, Tax Court/CDP/refund deadlines, de minimis·Section 179·bonus·MACRS. General information and estimates within Circular 230 |
 | [`oiyo-fr-tax-guide`](skills/oiyo-fr-tax-guide/SKILL.md) | 🇫🇷 Français | Calendrier fiscal 2026, micro-entrepreneur (cotisations, versement libératoire), franchise en base de TVA, intérêt de retard et majorations, délais de réclamation, amortissement linéaire·dégressif, qui peut donner un conseil fiscal. Information générale et estimations |
