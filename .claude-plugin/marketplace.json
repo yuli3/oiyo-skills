@@ -58,7 +58,8 @@
         "./skills/oiyo-world-corporate-tax-guide",
         "./skills/oiyo-world-home-purchase-guide",
         "./skills/oiyo-de-everyday-law-guide",
-        "./skills/oiyo-world-late-payment-guide"
+        "./skills/oiyo-world-late-payment-guide",
+        "./skills/oiyo-world-parental-pay-guide"
       ]
     }
   ]
