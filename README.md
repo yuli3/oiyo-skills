@@ -28,6 +28,7 @@
 | [`oiyo-tw-tax-guide`](skills/oiyo-tw-tax-guide/SKILL.md) | 🇹🇼 繁體中文 | 綜所稅與營所稅申報期限、營業稅單月15日、114與115年度級距與扣除額、營業稅起徵點10萬／5萬與小規模1%、滯納金與復查訴願期限、耐用年數表折舊與8萬元費用化。一般資訊與試算 |
 | [`oiyo-world-labor-guide`](skills/oiyo-world-labor-guide/SKILL.md) | 🌐 7개국 (JP·UK·US·FR·ES·CN·TW, 각국 언어) | 퇴직·해고 때 법정 계산: 解雇予告手当·基本手当 일수, UK redundancy pay·notice·tribunal 기한, US 최저임금·overtime·WARN·EEOC, FR indemnité légale·rupture conventionnelle, ES despido 33/20 días·paro, CN 经济补偿 N/2N, TW 資遣費·預告期間·特休. 일반 정보와 추정, 법률 자문·대리 없음 |
 | [`oiyo-world-tenancy-guide`](skills/oiyo-world-tenancy-guide/SKILL.md) | 🌐 7곳 (JP·England·CA/NY·FR·ES·CN·TW, 각국 언어) | 집 임대차 법정 기준: 敷金·解約予告, England 5/6주 보증금 상한·30일 보호 기한, CA·NY 1개월 상한·반환 기한·AB 1482 인상 상한, FR dépôt de garantie·préavis·IRL, ES fianza·prórroga·IRAV, CN 书面合同·押金, TW 押金 2個月·30日通知. 일반 정보와 추정, 법률 자문·대리 없음 |
+| [`oiyo-world-consumer-guide`](skills/oiyo-world-consumer-guide/SKILL.md) | 🌐 7곳 (JP·UK·FR·ES·CN·TW·US, 각국 언어) | 청약철회·환불 기한: クーリング・オフ 8/20日, UK 14 days (CCR 2013), FR rétractation 14 jours, ES desistimiento 14 días, CN 七日无理由退货, TW 七日解約權, US FTC 3 business days. 마지막 철회일·환불 기한·제외 품목. 일반 정보, 법률 자문·통지 대행 없음 |
 
 ## 그 밖의 스킬
 
@@ -50,9 +51,9 @@
 
   | 플러그인 | 들어 있는 스킬 |
   | --- | --- |
-  | `oiyo-skills` | 16종 전체 |
+  | `oiyo-skills` | 17종 전체 |
   | `oiyo-kr` | 한국 5종(법령 길잡이·세무 실무·생활 지원금·경영·외국인 가이드). `/plugin install oiyo-kr --marketplace yuli3/oiyo-skills` |
-  | `oiyo-world` | 나라별 10종(각국 길잡이 + 7개국 세무 가이드 + 7개국 퇴직·해고 계산 + 7개국 임대차). `/plugin install oiyo-world --marketplace yuli3/oiyo-skills` |
+  | `oiyo-world` | 나라별 11종(각국 길잡이 + 7개국 세무 가이드 + 7개국 퇴직·해고 계산 + 7개국 임대차 + 7개국 청약철회). `/plugin install oiyo-world --marketplace yuli3/oiyo-skills` |
 - **Claude 앱(claude.ai)**: [Releases](https://github.com/yuli3/oiyo-skills/releases/latest)에서 스킬별 zip을 받아 설정 → 기능 → 스킬에 올려요.
 - **Claude Code**: 저장소를 받아 `skills/<이름>` 폴더를 `~/.claude/skills/`에 복사해요.
   ```sh

@@ -2,12 +2,12 @@
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "oiyo-skills",
   "owner": { "name": "Oiyo Tech", "url": "https://github.com/yuli3/oiyo-skills" },
-  "metadata": { "description": "한국 세금·회계·노동·행정 법령 길잡이와 나라별 세무·노동·임대차 가이드, HTML 모션 스킬. 대리·자문이 아닌 법령 정보와 계산." },
+  "metadata": { "description": "한국 세금·회계·노동·행정 법령 길잡이와 나라별 세무·노동·임대차·소비자 가이드, HTML 모션 스킬. 대리·자문이 아닌 법령 정보와 계산." },
   "plugins": [
     {
       "name": "oiyo-skills",
       "source": "./",
-      "description": "OIYO 스킬 전체 16종: 각국 길잡이(질문을 현지 도구로 안내), 한국 법령 길잡이·세무 실무·생활 지원금·경영·외국인 가이드, 7개국 세무 가이드, 7개국 퇴직·해고 계산, 7개국 임대차(보증금·해지 예고·임대료 인상), HTML 모션.",
+      "description": "OIYO 스킬 전체 17종: 각국 길잡이(질문을 현지 도구로 안내), 한국 법령 길잡이·세무 실무·생활 지원금·경영·외국인 가이드, 7개국 세무 가이드, 7개국 퇴직·해고 계산, 7개국 임대차(보증금·해지 예고·임대료 인상), 7개국 청약철회·환불 기한, HTML 모션.",
       "category": "productivity",
       "tags": ["korea", "tax", "law", "labor", "accounting"]
     },
@@ -30,9 +30,9 @@
       "name": "oiyo-world",
       "source": "./",
       "strict": false,
-      "description": "나라별 스킬 10종만: 각국 길잡이, 일본·미국·프랑스·스페인·중국·영국·대만 세무 가이드(각국 언어), 7개국 퇴직·해고 법정 계산, 7개국 임대차 보증금·해지 예고·임대료 인상.",
+      "description": "나라별 스킬 11종만: 각국 길잡이, 일본·미국·프랑스·스페인·중국·영국·대만 세무 가이드(각국 언어), 7개국 퇴직·해고 법정 계산, 7개국 임대차 보증금·해지 예고·임대료 인상, 7개국 청약철회·환불 기한.",
       "category": "productivity",
-      "tags": ["tax", "labor", "tenancy", "japan", "usa", "uk", "france", "spain", "china", "taiwan"],
+      "tags": ["tax", "labor", "tenancy", "consumer", "japan", "usa", "uk", "france", "spain", "china", "taiwan"],
       "skills": [
         "./skills/oiyo-world-law-intake",
         "./skills/oiyo-jp-tax-guide",
@@ -43,7 +43,8 @@
         "./skills/oiyo-uk-tax-guide",
         "./skills/oiyo-tw-tax-guide",
         "./skills/oiyo-world-labor-guide",
-        "./skills/oiyo-world-tenancy-guide"
+        "./skills/oiyo-world-tenancy-guide",
+        "./skills/oiyo-world-consumer-guide"
       ]
     }
   ]
