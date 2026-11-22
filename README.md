@@ -34,6 +34,7 @@
 | [`oiyo-world-employer-cost-guide`](skills/oiyo-world-employer-cost-guide/SKILL.md) | 🌐 4개국 (JP·UK·US·ES, 각국 언어) | 고용주 급여 비용: 協会けんぽ·厚生年金 18.3% 折半·子ども・子育て拠出金 0.36%·雇用保険 令和8年度, UK employer NICs 15%·£5,000·Employment Allowance £10,500, US FICA 6.2%($184,500)+1.45%, ES contingencias comunes 23,60 %. 일반 추정, 급여 대행·신고 없음 |
 | [`oiyo-world-company-calendar`](skills/oiyo-world-company-calendar/SKILL.md) | 🌐 4개국 (JP·UK·US·FR, 각국 언어) | 결산일 기준 회사 연간 일정: 法人税 確定申告 2か月·中間申告·消費税 延長届出, Companies House accounts 9개월·CT 납부 9개월+1일·CT600 12개월·가산금, Form 1120/1120-S/1065·Form 7004 연장(6월 결산 예외), approbation des comptes 6 mois·dépôt au greffe. 일반 정보, 신고 대행 없음 |
 | [`oiyo-world-einvoice-guide`](skills/oiyo-world-einvoice-guide/SKILL.md) | 🌐 3개국 (FR·JP·ES, 각국 언어) | 전자세금계산서·인보이스 일정: FR facturation électronique 수신 2026-09-01·발행 GE/ETI 2026·PME/micro 2027, JP インボイス 経過措置 80%→70%(令和8年10月〜)→50%→30%, ES VERI*FACTU sociedades 2027-01-01·autónomos 2027-07-01. 일반 정보, 신고 대행·소프트웨어 인증 없음 |
+| [`oiyo-world-tax-residency-guide`](skills/oiyo-world-tax-residency-guide/SKILL.md) | 🌐 6개국 (US·UK·ES·TW·JP·FR, 각국 언어) | 세법상 거주자 판정: US substantial presence test(31일·가중 183일), UK statutory residence test(자동 테스트·ties 표), ES 183일 초과·경제 중심, TW 戶籍 31天·無住所 183天, JP·FR은 요건 안내만. 조세조약 판정 없음, 일반 정보 |
 
 ## 그 밖의 스킬
 
@@ -56,9 +57,9 @@
 
   | 플러그인 | 들어 있는 스킬 |
   | --- | --- |
-  | `oiyo-skills` | 22종 전체 |
+  | `oiyo-skills` | 23종 전체 |
   | `oiyo-kr` | 한국 5종(법령 길잡이·세무 실무·생활 지원금·경영·외국인 가이드). `/plugin install oiyo-kr --marketplace yuli3/oiyo-skills` |
-  | `oiyo-world` | 나라별 16종(각국 길잡이 + 7개국 세무 가이드 + 7개국 퇴직·해고 계산 + 7개국 임대차 + 7개국 청약철회 + 5곳 상속·증여 + 6곳 소멸시효·소액 소송 + 4개국 고용주 급여 비용 + 4개국 회사 연간 일정 + 3개국 전자세금계산서 일정). `/plugin install oiyo-world --marketplace yuli3/oiyo-skills` |
+  | `oiyo-world` | 나라별 17종(각국 길잡이 + 7개국 세무 가이드 + 7개국 퇴직·해고 계산 + 7개국 임대차 + 7개국 청약철회 + 5곳 상속·증여 + 6곳 소멸시효·소액 소송 + 4개국 고용주 급여 비용 + 4개국 회사 연간 일정 + 3개국 전자세금계산서 일정 + 6개국 거주자 판정). `/plugin install oiyo-world --marketplace yuli3/oiyo-skills` |
 - **Claude 앱(claude.ai)**: [Releases](https://github.com/yuli3/oiyo-skills/releases/latest)에서 스킬별 zip을 받아 설정 → 기능 → 스킬에 올려요.
 - **Claude Code**: 저장소를 받아 `skills/<이름>` 폴더를 `~/.claude/skills/`에 복사해요.
   ```sh
