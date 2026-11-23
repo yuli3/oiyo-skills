@@ -55,6 +55,7 @@
 | 스킬 | 누가 | 하는 일 |
 | --- | --- | --- |
 | [`oiyo-motion-studio`](skills/oiyo-motion-studio/SKILL.md) | 마케터·1인 사업자·개발자 | 영상 편집기 없이 HTML 한 장으로 세로 광고·숏폼·로고 모션 만들기. 화면 = 시간의 함수(frame = f(t))라서 같은 파일이 웹 데모·썸네일·mp4가 돼요. 뼈대 생성(`new-motion.mjs`), mp4·정지 화면 렌더(`render.cjs`), 작품 17편의 기법 수치 카탈로그. 예시: https://show.oiyo.net/motion/ |
+| [`oiyo-financial-planning-guide`](skills/oiyo-financial-planning-guide/SKILL.md) | 🌐 12곳 (KR·US·UK·JP·CN·FR·ES·TW·DE·AU·SG·CA, 각국 언어) | 재무설계 길잡이: 401(k)·IRA·Roth, Social Security 수령 나이, PMI, UK 연금 세액공제·LISA·학자금, 新NISA·iDeCo·住宅ローン控除, 个人养老金·公积金组合贷, PER, plan de pensiones, CPF 환급, 캐나다 스트레스 테스트, 국민연금 조기·연기, 勞退自提 6%, Riester·Rürup, 호주 super 한도·Division 293. 상품 추천 없음, 일반 정보 |
 
 ## 직업별 역량 지도
 
